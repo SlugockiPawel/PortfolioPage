@@ -22,44 +22,9 @@
     </div>
 </div>
 
-<header class="container">
-    <!-- Navigation section  -->
-
-    @* *@
-    @* <nav class="navbar navbar-expand-md navbar-light bg-white container-fluid pb-0 mb-0"> *@
-    @*     <div class="container"> *@
-    @*         <a asp-page="Index" class="navbar-brand"> *@
-    @*             <i class="fa fa-magnet"></i> *@
-    @*         </a> *@
-    @*         <button id="togglerIconn" class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" *@
-    @*                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" *@
-    @*                 aria-label="Toggle navigation"> *@
-    @*             <span> *@
-    @*                 <i class="fa fa-bars" title="Menu"></i> *@
-    @*             </span> *@
-    @*         </button> *@
-    @*         <div class="collapse navbar-collapse " id="navbarNavDropdown"> *@
-    @*             <div class="container container-narrow"> *@
-    @*                 <div class="row py-0 "> *@
-    @*                     <ul class="navbar-nav d-flex justify-content-center "> *@
-    @*                         <li class="nav-item"> *@
-    @*                             <a class="nav-link" aria-current="page">Home</a> *@
-    @*                         </li> *@
-    @*                         <li class="nav-item"> *@
-    @*                             <a class="nav-link">About Me</a> *@
-    @*                         </li> *@
-    @*                         <li class="nav-item"> *@
-    @*                             <a class="nav-link">Contact</a> *@
-    @*                         </li> *@
-    @*                     </ul> *@
-    @*                 </div> *@
-    @*             </div> *@
-    @*         </div> *@
-    @*     </div> *@
-    @* </nav> *@
-
-
-    <nav id="navBar" class="navbar navbar-default sticky-top navbar-expand-md navbar-light text-center" role="navigation">
+<!-- Navigation section  -->
+<div class="container sticky-top">
+    <nav id="navBar" class="navbar navbar-default navbar-expand-md navbar-light" role="navigation">
         <div class="container">
             <a asp-page="Index" class="navbar-brand ps-0">
                 <i class="fa fa-magnet"></i>
@@ -90,7 +55,11 @@
 
         </div>
     </nav>
-</header>
+</div>
+
+
+
+
 
 <div class="container">
     <main role="main" class="pb-3">
@@ -119,7 +88,7 @@
                 <p>(+01) 2048937 / 02 203403</p>
             </div>
 
-            <div class="clearfix col-md-12 col-sm-12">
+            <div class="clearfix px-0 col-md-12 col-sm-12">
                 <hr>
             </div>
 
