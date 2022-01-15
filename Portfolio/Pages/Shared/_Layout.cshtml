@@ -23,42 +23,38 @@
 </div>
 
 <!-- Navigation section  -->
-<div class="container sticky-top">
-    <nav id="navBar" class="navbar navbar-default navbar-expand-md navbar-light" role="navigation">
-        <div class="container">
-            <a asp-page="Index" class="navbar-brand ps-0">
-                <i class="fa fa-magnet"></i>
-            </a>
+<nav id="navBar" class="navbar navbar-default sticky-top navbar-expand-md navbar-light" role="navigation">
+    <div class="container">
 
-            <button class="navbar-toggler border-0 pe-0" id="togglerIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span>
-                    <i class="fa fa-bars" title="Menu"></i>
-                </span>
-            </button>
+        <a asp-page="Index" class="navbar-brand ps-0">
+            <i class="fa fa-magnet"></i>
+        </a>
 
-            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarSupportedContent">
-                <ul class="nav navbar-nav">
-                    <li class="">
-                        <a class="ps-5 pe-0" asp-page="Index">Projects</a>
-                    </li>
-                    <li>
-                        <a class="ps-5 pe-0" href="#">About Me</a>
-                    </li>
-                    <li>
-                        <a class="ps-5 pe-0" href="#">The Blog</a>
-                    </li>
-                    <li>
-                        <a class="ps-5 pe-0" href="#">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
+        <button class="navbar-toggler border-0" id="togglerIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <i class="fa fa-bars" title="Menu"></i>
+            </span>
+        </button>
 
+        <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarSupportedContent">
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a class="ps-5 pe-0" asp-page="Index">Projects</a>
+                </li>
+                <li>
+                    <a asp-page="About" class="ps-5 pe-0">About Me</a>
+                </li>
+                <li>
+                    <a class="ps-5 pe-0" href="#">The Blog</a>
+                </li>
+                <li>
+                    <a class="ps-5 pe-0" href="#">Contact Me</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-</div>
 
-
-
+    </div>
+</nav>
 
 
 <div class="container">
@@ -68,27 +64,24 @@
 </div>
 
 <!-- Footer Section -->
-
-<footer class="container px-0">
+<footer>
     <div class="container">
         <div class="row">
 
-            <div class="col-md-3 col-sm-3">
-                <i class="fa fa-magnet"></i>
+            <div class="col-md-3 col-sm-3 d-sm-flex">
+                <i class="fa fa-magnet align-self-sm-center"></i>
             </div>
 
             <div class="col-md-4 col-sm-4">
                 <p>124 Market Street, Suite 3570 San Francisco, CA 3042 United States</p>
             </div>
 
-            <div class="offset-1 col-md-4 offset-1 col-sm-3">
-                <p>
-                    <a href="mailto:youremail@gmail.com">hello@yourstudio.co</a>
-                </p>
+            <div class="col-md-4 offset-md-1 col-sm-3 offset-sm-1">
+                <p><a href="mailto:youremail@gmail.com">hello@yourstudio.co</a></p>
                 <p>(+01) 2048937 / 02 203403</p>
             </div>
 
-            <div class="clearfix px-0 col-md-12 col-sm-12">
+            <div class="clearfix col-md-12 col-sm-12 opacity-25">
                 <hr>
             </div>
 
@@ -100,20 +93,16 @@
 
             <div class="col-md-6 col-sm-6">
                 <ul class="social-icon">
-                    <li>
-                        <a href="#" class="fa fa-github"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="fa fa-slack"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="fa fa-linkedin"></a>
-                    </li>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
                 </ul>
             </div>
 
         </div>
     </div>
+
+
 </footer>
 
 <!-- SCRIPTS -->
