@@ -23,3 +23,13 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+/*
+ * TODO add About Me View
+ * TODO add Contact View
+ * TODO add Portfolio View
+ * TODO add The Blog project ref
+ * TODO add email service to contact form
+ *
+ 
+ */
