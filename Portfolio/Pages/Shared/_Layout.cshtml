@@ -8,7 +8,8 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>@ViewData["Title"] - Portfolio</title>
-    <link rel="stylesheet" href="~/css/bootstrap.custom.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.custom.css"/>
+    <link rel="stylesheet" href="~/css/custom.css"/>
     @* <link rel="stylesheet" href="~/css/font-awesome.min.css"> *@
     @* <link rel="stylesheet" href="~/css/style.css" asp-append-version="true"/> *@
     @* <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet"> *@
@@ -23,38 +24,20 @@
 @* </div> *@
 
 <!-- Navigation section  -->
-<nav id="navBar" class="navbar navbar-default sticky-top navbar-expand-md navbar-light" role="navigation">
-    <div class="container">
 
-        <a asp-page="Index" class="navbar-brand ps-0">
-            <i class="fa fa-magnet"></i>
-        </a>
-
-        <button class="navbar-toggler border-0" id="togglerIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span>
-                <i class="fa fa-bars" title="Menu"></i>
-            </span>
-        </button>
-
-        <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarSupportedContent">
-            <ul class="nav navbar-nav">
-                <li class="">
-                    <a class="ps-5 pe-0" asp-page="Index">Projects</a>
-                </li>
-                <li>
-                    <a asp-page="About" class="ps-5 pe-0">About Me</a>
-                </li>
-                <li>
-                    <a class="ps-5 pe-0" href="#">The Blog</a>
-                </li>
-                <li>
-                    <a asp-page="Contact" class="ps-5 pe-0">Contact Me</a>
-                </li>
-            </ul>
-        </div>
-
+<div class="row">
+    <div class="col-md-3 col-12 bg-dark vh-100">
+        <p>
+            loremloremloremloremloremloremloremloremloremloremloremlorem
+        </p>
     </div>
-</nav>
+    
+    <div class="col-md-9 col-12 bg-light vh-100">
+        <p>
+            loremloremloremloremloremloremloremloremloremloremloremlorem
+        </p>
+    </div>
+</div>
 
 <main role="main" class="pb-3">
     @RenderBody()
