@@ -25,6 +25,10 @@ app.MapRazorPages();
 app.Run();
 
 /*
+    TODO how to transform navbar from top to sidebar
+    TODO make social icon background a circle and add it as bootstrap class
+    TODO how to make <ul> wrap on narrow screen one item by one
+
  * TODO add About Me View
  * TODO add Contact View
  * TODO add Portfolio View
