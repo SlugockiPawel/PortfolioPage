@@ -1,2 +1,16 @@
 ﻿@import "../lib/bootstrap/dist/css/bootstrap.custom.min.css";
 
+/*
+    Sections:
+        1. Navbar top
+        2. Navbar sidebar
+        3.
+
+*/
+
+
+/*---------------Navbar Top-----------------*/
+
+.toggler-margin-left {
+    margin-left: 12px;
+}
