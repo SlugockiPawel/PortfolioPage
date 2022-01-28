@@ -11,11 +11,9 @@
 
 /*---------------Navbar Top-----------------*/
 
-.toggler-margin-left {
-    margin-left: 12px;
-}
+.toggler-margin-left { margin-left: 12px; }
 
-    /*--> social list*/
+/*--> social list*/
 
 #social-list a {
     width: 32px;
@@ -32,6 +30,19 @@
 }
 
 #social-list a:hover {
-        /* color: var(--bs-dark); */
-        background-color: var(--bs-gray-400);
+    background-color: var(--bs-gray-400);
+}
+
+#navigation-tabs i {
+    min-width: 16px;
+    max-width: 16px;
+    color: var(--bs-light);
+}
+
+#navigation-tabs a:hover{
+    color: var(--bs-success);
+}
+
+    #navigation-tabs a:hover i {
+        color: var(--bs-success);
     }
