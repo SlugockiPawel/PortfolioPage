@@ -9,7 +9,7 @@
 */
 
 
-/*---------------Navbar Top-----------------*/
+/*---------------Navbar Top (below md breakpoint)-----------------*/
 
 .toggler-margin-left { margin-left: 12px; }
 
@@ -25,12 +25,12 @@
     padding-top: 5px;
     display: inline-block;
     overflow: hidden;
-    transition: all 0.4s ease-in-out;
     background-color: var(--bs-light);
 }
 
 #social-list a:hover {
-    background-color: var(--bs-gray-400);
+    transition: all 0.4s ease-in-out;
+    background-color: var(--bs-success);
 }
 
 #navigation-tabs i {
@@ -39,10 +39,30 @@
     color: var(--bs-light);
 }
 
-#navigation-tabs a:hover{
-    color: var(--bs-success);
-}
+#navigation-tabs a:hover,
+#navigation-tabs a:hover i { color: var(--bs-success); }
 
-    #navigation-tabs a:hover i {
-        color: var(--bs-success);
+
+
+/*---------------Navbar Sidebar (above md breakpoint)-----------------*/
+
+
+@media (min-width: 768px) {
+
+    #navbar,
+    #navigation {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        min-height: 100vh;
     }
+    
+    #navigation-tabs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btn-hire {
+        width: 45% !important;
+    }
+}

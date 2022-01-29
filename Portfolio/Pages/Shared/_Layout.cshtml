@@ -18,7 +18,7 @@
 
 <!-- Navigation section  -->
 
-<nav class="navbar bg-dark navbar-dark  navbar-expand-md">
+<nav id="navbar" class="navbar bg-dark navbar-dark navbar-expand-md d-md-inline-block">
     <div class="container-fluid d-flex justify-content-center">
 
         <button class="navbar-toggler position-absolute start-0 toggler-margin-left py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
                 <i class="fas fa-bars"></i>
             </span>
         </button>
-        <a class="navbar-brand fw-bolder" href="#">Pawel Slugocki</a>
+        <a class="navbar-brand fw-bolder mt-md-3" href="#">Pawel Slugocki</a>
     </div>
 
     <div class="container-fluid mx-0">
@@ -64,7 +64,7 @@
 
             </div>
 
-            <ul id="navigation-tabs" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul id="navigation-tabs" class="navbar-nav me-auto mb-2">
                 <li class="nav-item">
                     <a class="nav-link active d-flex align-self-center" aria-current="page" href="#">
                         <span class="me-3">
@@ -101,15 +101,16 @@
                     </a>
                 </li>
             </ul>
-            
-            <button class="btn btn-primary w-100 text-white"> <i class="fas fa-paper-plane me-1"></i>Hire Me</button>
+
+            <button id="btn-hire" class="btn btn-primary w-100 text-white mb-3"> <i class="fas fa-paper-plane me-1"></i>Hire Me</button>
 
         </div>
     </div>
 
 </nav>
 
-<main role="main" class="container bg-light">
+
+<main role="main" class="container-fluid bg-success d-inline-block">
     @RenderBody()
 </main>
 
@@ -117,6 +118,7 @@
 <footer class="footer bg-info">
     <p>Footer</p>
 </footer>
+
 
 <!-- SCRIPTS -->
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
