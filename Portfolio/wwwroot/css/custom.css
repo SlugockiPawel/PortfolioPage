@@ -52,21 +52,23 @@
 
 
 @media (min-width: 768px) {
-
-    #navbar,
-    #navigation {
-        display: flex;
-        flex-direction: column;
-        width: 280px;
-        min-height: 100vh;
-    }
-    
-    #navigation-tabs {
-        display: flex;
-        flex-direction: column;
+    #navbar {
+        width: var(--navbar-sidebar-width);
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
     }
 
-    #btn-hire {
-        width: 45% !important;
+    #btn-hire { width: 45% !important; }
+}
+
+
+/*---------------Main And Footer Wrapper-----------------*/
+
+@media (min-width: 768px) {
+    #main-footer-wrapper {
+        width: 100%;
+        margin-left: var(--navbar-sidebar-width);
     }
 }
