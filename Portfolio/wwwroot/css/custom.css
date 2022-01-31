@@ -6,11 +6,16 @@
 
 /*
     Sections:
+        0. General
         1. Navbar top
         2. Navbar sidebar
         3. Main and Footer Wrapper
+        4. About-me-section
 
 */
+
+/*--------------- General -----------------*/
+
 
 
 /*---------------Navbar Top (below md breakpoint)-----------------*/
@@ -72,3 +77,13 @@
         margin-left: var(--navbar-sidebar-width);
     }
 }
+
+/*---------------About-me-section-----------------*/
+    #about-me-section {
+        background: var(--bs-gray-100);
+    }
+
+    #profile-pic {
+        max-height: 300px;
+        
+    }
