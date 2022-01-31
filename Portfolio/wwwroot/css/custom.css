@@ -18,7 +18,7 @@
 
 
 
-/*---------------Navbar Top (below md breakpoint)-----------------*/
+/*---------------Navbar Top (below lg breakpoint)-----------------*/
 
 .toggler-margin-left { margin-left: 12px; }
 
@@ -53,10 +53,10 @@
 
 
 
-/*---------------Navbar Sidebar (above md breakpoint)-----------------*/
+/*---------------Navbar Sidebar (above lg breakpoint)-----------------*/
 
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     #navbar {
         width: var(--navbar-sidebar-width);
         position: fixed;
@@ -71,7 +71,7 @@
 
 /*---------------Main And Footer Wrapper-----------------*/
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     #main-footer-wrapper {
         width: 100%;
         margin-left: var(--navbar-sidebar-width);
