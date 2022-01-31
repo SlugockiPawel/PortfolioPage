@@ -4,12 +4,14 @@
 // import functions first (so you can use them in this file)
 @import "../../scss/_functions.scss";
 
+// font family
+$font-family-base: "Lato";
 
 // global variables
 $enable-smooth-scroll: true;
 $enable-rounded: true;
 
-
+$font-weight-bold: 800;
 
 // theme color variables => https://coolors.co/
 $primary: #718f94;
@@ -20,9 +22,6 @@ $warning: #ce7b91;
 $danger: #960200;
 $light: #fefffe;
 $dark: #403f4c;
-
-// font family
-$font-family-base: "Lato";
 
 
 // links
