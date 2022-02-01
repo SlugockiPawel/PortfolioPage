@@ -11,12 +11,13 @@
         2. Navbar sidebar
         3. Main and Footer Wrapper
         4. About-me-section
+        5. Tech-section
 
 */
 
 /*--------------- General -----------------*/
 
-
+p { color: var(--bs-gray-700); }
 
 /*---------------Navbar Top (below lg breakpoint)-----------------*/
 
@@ -79,11 +80,17 @@
 }
 
 /*---------------About-me-section-----------------*/
-    #about-me-section {
-        background: var(--bs-gray-100);
-    }
 
-    #profile-pic {
-        max-height: 300px;
-        
-    }
+#about-me-section { background: var(--bs-gray-100); }
+
+#profile-pic { max-height: 300px; }
+
+/*---------------Tech-section-----------------*/
+.tech-item > img {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+}
