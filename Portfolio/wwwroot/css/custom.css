@@ -87,10 +87,10 @@ p { color: var(--bs-gray-700); }
 
 /*---------------Tech-section-----------------*/
 .tech-item > img {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    max-height: 100px;
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
 }
