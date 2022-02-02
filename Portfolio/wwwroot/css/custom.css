@@ -12,6 +12,7 @@
         3. Main and Footer Wrapper
         4. About-me-section
         5. Tech-section
+        6. Projects-section
 
 */
 
@@ -87,10 +88,24 @@ p { color: var(--bs-gray-700); }
 
 /*---------------Tech-section-----------------*/
 .tech-item > img {
-    width: 120px;
-    height: 120px;
-    min-width: 120px;
-    min-height: 120px;
-    max-width: 120px;
-    max-height: 120px;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
 }
+
+@media (min-width: 400px) {
+    .tech-item > img {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        min-height: 120px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+
+/*--------------- Projects-section -----------------*/
+
