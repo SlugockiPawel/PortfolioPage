@@ -116,3 +116,64 @@ p { color: var(--bs-gray-700); }
 
 /*--------------- Projects-section -----------------*/
 
+.card-leader { max-width: 800px; }
+
+.card-img-holder { max-height: 400px; }
+
+.card .link-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover .link-mask {
+    visibility: visible;
+    background: rgba(113, 143, 148, 0.3);
+}
+
+.card:hover .link-mask-text {
+    display: block;
+}
+
+
+
+/* .card .link-mask .link-mask-link { */
+/*     position: absolute; */
+/*     left: 0; */
+/*     top: 0; */
+/*     width: 100%; */
+/*     height: 100%; */
+/*     display: block; */
+/* } */
+
+.card .link-mask-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    display: none
+}
+
+.card .link-mask-text .btn {
+    top: 50%;
+    margin-top: -25px;
+    position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card .link-mask {
+        transition: none
+    }
+}
+
+@media (max-width: 767px) {
+    .card-img-holder { max-height: 300px; }
+}
