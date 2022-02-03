@@ -1,6 +1,12 @@
 ﻿@import "../lib/bootstrap/dist/css/bootstrap.custom.min.css";
 
-:root { --navbar-sidebar-width: 280px; }
+:root {
+    --navbar-sidebar-width: 280px;
+    --profile-pic-max-height: 300px;
+    --tech-item-size-small: 80px;
+    --tech-item-size-big: 120px;
+    --card-hover-color: var(--bs-primary-rgb);
+}
 
 
 
@@ -84,26 +90,27 @@ p { color: var(--bs-gray-700); }
 
 #about-me-section { background: var(--bs-gray-100); }
 
-#profile-pic { max-height: 300px; }
+#profile-pic { max-height: var(--profile-pic-max-height); }
 
 /*---------------Tech-section-----------------*/
+
 .tech-item > img {
-    width: 80px;
-    height: 80px;
-    min-width: 80px;
-    min-height: 80px;
-    max-width: 80px;
-    max-height: 80px;
+    width: var(--tech-item-size-small);
+    height: var(--tech-item-size-small);
+    min-width: var(--tech-item-size-small);
+    min-height: var(--tech-item-size-small);
+    max-width: var(--tech-item-size-small);
+    max-height: var(--tech-item-size-small);
 }
 
 @media (min-width: 400px) {
     .tech-item > img {
-        width: 120px;
-        height: 120px;
-        min-width: 120px;
-        min-height: 120px;
-        max-width: 120px;
-        max-height: 120px;
+        width: var(--tech-item-size-big);
+        height: var(--tech-item-size-big);
+        min-width: var(--tech-item-size-big);
+        min-height: var(--tech-item-size-big);
+        max-width: var(--tech-item-size-big);
+        max-height: var(--tech-item-size-big);
     }
 }
 
