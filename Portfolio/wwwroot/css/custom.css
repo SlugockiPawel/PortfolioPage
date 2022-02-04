@@ -8,8 +8,6 @@
     --card-hover-color: var(--bs-primary-rgb);
 }
 
-
-
 /*
     Sections:
         0. General
@@ -19,7 +17,7 @@
         4. About-me-section
         5. Tech-section
         6. Projects-section
-
+        
 */
 
 /*--------------- General -----------------*/
@@ -118,7 +116,13 @@ p { color: var(--bs-gray-700); }
 
 .card-leader { max-width: 800px; }
 
-.card-img-holder { max-height: 400px; }
+.lead-card-img-holder {
+    max-height: 400px;
+}
+
+.card-img-holder {
+    max-height: 190px;
+}
 
 .card .link-mask {
     position: absolute;
@@ -132,25 +136,10 @@ p { color: var(--bs-gray-700); }
 
 .card:hover .link-mask {
     visibility: visible;
-    background: rgba(113, 143, 148, 0.3);
+    background: rgba(113, 143, 148, 0.6);
 }
 
-.card:hover .link-mask-text {
-    display: block;
-}
-
-
-
-/* .card .link-mask .link-mask-link { */
-/*     position: absolute; */
-/*     left: 0; */
-/*     top: 0; */
-/*     width: 100%; */
-/*     height: 100%; */
-/*     display: block; */
-/* } */
-
-.card .link-mask-text {
+.card .link-mask-link {
     position: absolute;
     left: 0;
     top: 0;
@@ -162,10 +151,15 @@ p { color: var(--bs-gray-700); }
     display: none
 }
 
-.card .link-mask-text .btn {
+.card:hover .link-mask-link {
+    display: block;
+}
+
+.card .link-mask-link .btn {
     top: 50%;
     margin-top: -25px;
     position: relative;
+    padding: 15px 42px 15px 42px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -175,5 +169,12 @@ p { color: var(--bs-gray-700); }
 }
 
 @media (max-width: 767px) {
-    .card-img-holder { max-height: 300px; }
+    .lead-card-img-holder { max-height: 300px; }
+}
+
+@media (min-width: 1500px) {
+    .card-img-holder {
+        max-height: 290px;
+    }
+
 }
