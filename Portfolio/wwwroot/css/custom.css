@@ -17,6 +17,7 @@
         4. About-me-section
         5. Tech-section
         6. Projects-section
+        7. Blog-section
         
 */
 
@@ -178,3 +179,6 @@ p { color: var(--bs-gray-700); }
     }
 
 }
+
+
+/*--------------- Blog-section -----------------*/
