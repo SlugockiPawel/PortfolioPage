@@ -18,8 +18,10 @@
         5. Tech-section
         6. Projects-section
         7. Blog-section
+        8. Contact-section (Contact Page)
         
 */
+
 
 /*--------------- General -----------------*/
 
@@ -182,3 +184,23 @@ p { color: var(--bs-gray-700); }
 
 
 /*--------------- Blog-section -----------------*/
+
+/*--------------- Contact-section (Contact Page) -----------------*/
+
+#contact-section .container-fluid {
+    background: var(--bs-gray-100);
+}
+
+#contact-section .container {
+    max-width: 820px;
+}
+
+#contact-section textarea {
+    min-height: 250px;
+}
+
+@media (min-width: 992px) {
+    #contact-section textarea {
+        min-height: 350px;
+    }
+}
