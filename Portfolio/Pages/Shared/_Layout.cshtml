@@ -25,7 +25,7 @@
                 <i class="fas fa-bars"></i>
             </span>
         </button>
-        <a class="navbar-brand fw-bolder mt-lg-3 me-0" href="#">Pawel Slugocki</a>
+        <a class="navbar-brand fw-bolder mt-lg-3 me-0" asp-page="Index">Pawel Slugocki</a>
     </div>
 
     <div class="container-fluid mx-0">
@@ -65,7 +65,7 @@
 
             <ul id="navigation-tabs" class="navbar-nav flex-lg-column col-12">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">
+                    <a class="nav-link active" aria-current="page" asp-page="Index">
                         <span class="me-3">
                             <i class="fas fa-user-tie" aria-hidden="true" title="About Me"></i>
                         </span>About Me
@@ -93,7 +93,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">
+                    <a class="nav-link active" aria-current="page" asp-page="Contact">
                         <span class="me-3">
                             <i class="far fa-comments" aria-hidden="true" title="Contact"></i>
                         </span>Contact
@@ -101,7 +101,7 @@
                 </li>
             </ul>
 
-            <button id="btn-hire" class="btn btn-primary w-100 text-white my-3"> <i class="fas fa-paper-plane me-1"></i>Hire Me</button>
+            <a id="btn-hire" asp-page="Contact" class="btn btn-primary w-100 text-white my-3"> <i class="fas fa-paper-plane me-1"></i>Hire Me</a>
 
         </div>
     </div>
