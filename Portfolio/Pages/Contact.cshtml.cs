@@ -39,5 +39,13 @@ namespace Portfolio.Pages
         public void OnGet()
         {
         }
+
+        public async Task<IActionResult> OnPostSendMessage(InputModel model)
+        {
+            model.Message = $"{model.Message} <hr/>";
+            await _emailSender.SendContactEmailAsync(model.Email, model.Name, model.Subject, model.Message);
+
+            return RedirectToPage("Index");
+        }
     }
 }
