@@ -1,7 +1,14 @@
+using Microsoft.Extensions.Configuration;
+using Portfolio.Models;
+using Portfolio.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddScoped<IPortfolioEmailSender, EmailService>();
+
 
 var app = builder.Build();
 
