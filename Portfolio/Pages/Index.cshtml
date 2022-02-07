@@ -13,11 +13,12 @@
                 <p class="mb-1">
                     I'm a software engineer specialized in building custom Web applications using C# .NET Core framework. I write about software development on <a href="#" class="text-secondary fw-bolder">my blog</a>.
                 </p>
-                <p class="">Feel free to check my project <a href="#" class="fw-bolder text-secondary">portfolio</a> and <a href="#" class= "text-secondary fw-bolder">online resume</a>.</p>
+                <p class="">Feel free to check my project <a asp-page="Portfolio" class="fw-bolder text-secondary">portfolio</a> and <a href="#" class="text-secondary fw-bolder">online resume</a>.</p>
                 <p>I live in Wroclaw, Poland.</p>
+                <p class="text-primary fw-bolder">Currently I am available for work</p>
                 <div class="col-12 d-flex flex-wrap">
-                    <button class="btn btn-primary fw-bolder mt-2 me-3 text-light"> <i class="fas fa-arrow-alt-circle-right me-1"></i> View Portfolio</button>
-                    <button class="btn btn-dark fw-bolder mt-2"> <i class="fas fa-portrait me-2"></i> View Resume</button>
+                    <a class="btn btn-primary fw-bolder mt-2 me-3 text-light" asp-page="Portfolio"> <i class="fas fa-arrow-alt-circle-right me-1"></i> View Portfolio</a>
+                    <a href="#" class="btn btn-dark fw-bolder mt-2"> <i class="fas fa-portrait me-2"></i> View Resume</a>
                 </div>
             </div>
 
@@ -40,7 +41,7 @@
                     I have more than 3 years of experience working for a global IT corporation where I was responsible
                     for <span class="fst-italic fw-bolder">VBA desktop automations</span> and development of <span class="fst-italic fw-bolder">PowerBI dashboards</span> on local and global level within finance/payroll
                     departments.
-                    If you would like to find out more about my experience- please check my <a href="#" class="fw-bolder text-secondary">project portfolio</a> and <a href="#" class="fw-bolder text-secondary">online resume</a>.
+                    If you would like to find out more about my experience- please check my <a asp-page="Portfolio" class="fw-bolder text-secondary">project portfolio</a> and <a href="#" class="fw-bolder text-secondary">online resume</a>.
                 </p>
             </div>
         </div>
@@ -134,7 +135,7 @@
             @* Other cards *@
 
             <div class="col-12 col-md-6">
-                <div class="card card-other mb-3 rounded-0 bg-light overflow-hidden">
+                <div class="card mb-3 rounded-0 bg-light overflow-hidden">
                     <div class="row g-0">
                         <div class="col-12 col-xxxl-5 card-img-holder overflow-hidden">
                             <img src="images/projects/project-4.jpg" class="card-img rounded-0" alt="...">
@@ -159,7 +160,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <div class="card card-other mb-3 rounded-0 bg-light overflow-hidden">
+                <div class="card mb-3 rounded-0 bg-light overflow-hidden">
                     <div class="row g-0">
                         <div class="col-12 col-xxxl-5 card-img-holder overflow-hidden">
                             <img src="images/projects/project-4.jpg" class="card-img rounded-0" alt="...">
@@ -257,5 +258,4 @@
             <button class="btn btn-primary fw-bolder mt-2 text-light"> <i class="fas fa-arrow-alt-circle-right me-1"></i> View Blog</button>
         </div>
     </div>
-
 </section>
