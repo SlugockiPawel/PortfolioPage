@@ -4,8 +4,7 @@
     --navbar-sidebar-width: 280px;
     --profile-pic-max-height: 300px;
     --tech-item-size-small: 80px;
-    --tech-item-size-big: 120px;
-    --card-hover-color: var(--bs-primary-rgb);
+    --tech-item-size-big: 100px;
 }
 
 /*
@@ -19,6 +18,7 @@
         6. Projects-section
         7. Blog-section
         8. Contact-section (Contact Page)
+        9. Portfolio-section (Portfolio Page)
         
 */
 
@@ -117,6 +117,10 @@ p { color: var(--bs-gray-700); }
 
 /*--------------- Projects-section -----------------*/
 
+#projects-section .card-body {
+    background: var(--bs-gray-100);
+}
+
 .card-leader { max-width: 800px; }
 
 .lead-card-img-holder {
@@ -203,4 +207,9 @@ p { color: var(--bs-gray-700); }
     #contact-section textarea {
         min-height: 350px;
     }
+}
+
+/*--------------- Portfolio-section (Portfolio Page) -----------------*/
+#portfolio-section .container-fluid {
+    background: var(--bs-gray-100);
 }
