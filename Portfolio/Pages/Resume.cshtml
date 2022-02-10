@@ -1,0 +1,331 @@
+﻿@page
+@model Portfolio.Pages.ResumeModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+
+<section id="resume-section" class="">
+    <div class="container-fluid">
+        <div class="container px-4 pt-3 pb-3 pt-lg-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold mb-3">Online Resume</h1>
+                    <a href="#" class="btn btn-dark fw-bolder mb-3"><i class="fas fa-portrait me-2"></i> Download Resume as PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 pt-3 pb-5 p-lg-5">
+    <div class="row">
+    <div class="col-12">
+    <article id="resume" class="mx-auto p-5 mb-5 my-5 shadow-lg">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-6 col-xl-8">
+            <h2 class="resume-name mb-0 text-uppercase">Pawel Slugocki</h2>
+            <p class="my-2 mb-md-0  resume-position">Full Stack Backend .NET Developer</p>
+        </div><!--//resume-title-->
+        <div class="col-12 col-md-6 col-xl-4 d-md-flex justify-content-end  ms-lg-0 ps-lg-0">
+            <ul id="resume-contact" class="list-unstyled mb-0">
+                <li class="mb-2 ms-md-2">
+                    <i class="fas fa-phone-square fa-fw fa-lg me-2"></i><a class="text-black text-decoration-underline" href="tel:#">+48 793 385 265</a>
+                </li>
+                <li class="mb-2 ms-md-2">
+                    <i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="text-black text-decoration-underline" href="mailto:#">slugocki.pawel@gmail.com</a>
+                </li>
+                <li class="mb-2 ms-md-2">
+                    <i class="fas fa-globe fa-fw fa-lg me-2"></i><a class="text-black text-decoration-underline" href="#">www.slugocki.dev</a>
+                </li>
+                <li class="mb-0 ms-md-2"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Wroclaw, Poland</li>
+            </ul>
+        </div><!--//resume-contact-->
+    </div><!--//row-->
+    <!--//resume-header-->
+    <hr>
+    <div class="py-3">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-12 col-xl-2 text-center ">
+                <img id="img-resume" class="mb-3 mb-xl-0 me-xl-5 rounded mx-auto" src="images/resume-profile.png" alt="image">
+            </div>
+            <div class="col text-start">
+                <p>
+                    Gained engineering and finance degree that helped to operate
+                    in the financial world (at personal and business level).
+                    Started as a junior payroll accounting analyst to learn
+                    accounting and business acumen, ended as payroll accounting
+                    specialist, who was responsible for GL payroll accounts and payroll cost/audit queries needed by Business/Controllership. After 2 years, shifted towards Business Process Automation using VBA
+                    and Business Intelligence with PowerBi to help automate payroll processes which elevated KPI metrics.
+                </p>
+                <p>Currently, focused on Web Applications engineering.</p>
+            </div><!--//col-->
+        </div>
+    </div><!--//resume-intro-->
+    <hr>
+    @* resume body *@
+    <div>
+    <div class="row">
+    <div class="resume-main col-12 col-lg-8 col-xl-9 pe-0 pe-lg-5">
+        <section id="work-experience" class="py-3">
+            <h4 class="text-uppercase border-start border-5 border-primary mb-4">
+                <span class="ps-3 text-primary">Work Experience</span>
+            </h4>
+            <div class="mb-3">
+                <div class="row align-items-center mb-2">
+                    <h5 class="fw-bold col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Senior Payroll Accounting Analyst</h5>
+                    <div class="resume-text col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Hewlett-Packard Enterprise <br/>| 2015 - 2020</div>
+
+                </div>
+
+                <div class="">
+                    <p>
+                        This role has two main functions- bookkeeping of payroll General Ledger accounts and analysis of payroll activities. Payroll accountant should record all payroll related activities in the company books (either via payroll systems- like Global View or manually- using SAP).
+                    </p>
+                    <p>
+                        Also, Payroll Analyst cooperate closely with Payroll Operation teams/Controllers/internal and external Auditors/Business Analysts to provide meaningful insights about payroll financial transactions.
+                    </p>
+
+                    <h5 class="resume-subtitle fw-bold">Process Automation Responsibilities</h5>
+                    <ul class="">
+                        <li>
+                            Developing desktop automation VBA applications for payroll accounting team (local
+                            and global level)
+                        </li>
+                        <li>
+                            Cooperating with Project Managers to develop PowerBi dashboards / VBA automation applications
+                        </li>
+                        <li>
+                            Managing and adjusting all automated tools to ever changing business environment (SAP S4 Hana transition/audit requirements/local law changes)
+                        </li>
+                    </ul>
+
+                    <h5 class="resume-subtitle fw-bold">Accounting Responsibilities</h5>
+                    <ul class="">
+                        <li>
+                            Bookkeeping of payroll GL accounts and all related
+                            activities
+                        </li>
+                        <li>
+                            Creating and adjusting processes to ever changing local
+                            regulations
+                        </li>
+                        <li>
+                            Working with external and internal audits- providing data,
+                            explanations
+                        </li>
+                        <li>
+                            Cooperating with Business to explain
+                            movements on payroll accounts
+                        </li>
+                        <li>
+                            Testing SAP S4 Hana implementation
+                        </li>
+                        <li>
+                            Cooperating with ADP and local payroll teams to implement
+                            Global View system
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section><!--//work-section-->
+
+        <section id="certificates" class="py-3">
+            <h4 class="text-uppercase border-start border-5 border-primary mb-4">
+                <span class="ps-3 text-primary">Certificates</span>
+            </h4>
+            <div class="mb-3">
+                <ul class="">
+                    <li>
+                        Power BI Desktop & On-Line issued by Altkom Academia
+                    </li>
+                    <li>
+                        VBA advanced course issued by HintMine
+                    </li>
+                    <li>
+                        MS Excel – Reporting and Data Analysis Automation by using VBA issued by Altkom Academia
+                    </li>
+                    <li>
+                        Project management for managers issued by Altkom Academia
+                    </li>
+                    <li>
+                        Accounting Certificate (I and II) issued by Stowarzyszenie Ksiegowych w Polsce (SKWP)
+                    </li>
+                    <li>
+                        Visual Basic for Applications (VBA) in Excel – introduction to programming issued by NobleProg
+                    </li>
+                    <li>
+                        Basics of Accounting (I and II) by OdiTK
+                    </li>
+                    <li>
+                        Kickboxing level 5 certificate issued by PZKB
+                    </li>
+                    <li>
+                        First Aid course issued by Red Cross
+                    </li>
+                </ul>
+            </div>
+        </section><!--//work-section-->
+
+        <section id="project-section" class="py-3">
+            <h4 class="text-uppercase border-start border-5 border-primary mb-4">
+                <span class="ps-3 text-primary">Projects</span>
+            </h4>
+            <div class="mb-3">
+                <div class="row align-items-center mb-2">
+                    <h5 class="col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Bug Tracker</h5>
+                </div>
+                <div class="">
+                    <p>You can use this section for your side projects. You can <a href="#" class="theme-link">provide a project link here</a> as well. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+
+                </div>
+            </div><!--//item-->
+            <div class="">
+                <div class="row align-items-center mb-2">
+                    <h5 class="col-12 col-md-6 col-lg-8 mb-2 mb-md-0">The Blog</h5>
+
+                </div>
+                <div class="">
+                    <p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+
+                </div>
+            </div><!--//item-->
+            <div class="">
+                <div class="row align-items-center mb-2">
+                    <h5 class="col-12 col-md-6 col-lg-8 mb-2 mb-md-0">MoviePro</h5>
+                </div>
+                <div class="">
+                    <p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+
+                </div>
+            </div><!--//item-->
+        </section><!--//project-section-->
+    </div><!--//resume-main-->
+    <aside class="col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+        <!--//skills-section-->
+        <section class="py-3">
+            <h4 class="text-uppercase border-start border-5 border-primary mb-4">
+                <span class="ps-3 text-primary">Skills</span>
+            </h4>
+            <div class="">
+                <h5 class="fw-bold resume-subtitle">Technical</h5>
+                <ul class="list-unstyled resume-text">
+                    <li class="mb-2">HTML</li>
+                    <li class="mb-2">CSS</li>
+                    <li class="mb-2">Bootstrap</li>
+                    <li class="mb-2">C#</li>
+                    <li class="mb-2">.NET Core MVC</li>
+                    <li class="mb-2">.NET Core WEB API</li>
+                    <li class="mb-2">.NET6 Blazor</li>
+                    <li class="mb-2">Entity Framework / Dapper</li>
+                    <li class="mb-2">GIT</li>
+                    <li class="mb-2">JavaScript / Typescript</li>
+                    <li class="mb-2">Relational Databases- SQL, PostgreSQL, MySQL</li>
+                    <li class="mb-2">Object-Oriented Design</li>
+                    <li class="mb-2">Design and implement database (Code First and Database First)</li>
+                    <li class="mb-2">Node.js</li>
+                </ul>
+            </div>
+            <div class="">
+                <h5 class="fw-bold resume-subtitle">Professional</h5>
+                <ul class="list-unstyled resume-text">
+                    <li class="mb-2">Effective communication</li>
+                    <li class="mb-2">Team player</li>
+                    <li class="mb-2">Strong problem solver</li>
+                    <li>Good time management</li>
+                </ul>
+            </div><!--//item-->
+        </section>
+
+        <!--//education-section-->
+        <section class="py-3">
+            <h4 class="text-uppercase border-start border-5 border-primary mb-4">
+                <span class="ps-3 text-primary">Education</span>
+            </h4>
+            <ul class="list-unstyled">
+                <li class="mb-3 resume-text">
+                    <div class="fw-bold">Master of Engineering in Environment Protection</div>
+                    <div class="text-muted">Wroclaw University of Science and Technology</div>
+                    <div class="text-muted">Faculty of Environmental Engineering</div>
+                    <div class="text-muted">2009 - 2014</div>
+                </li>
+                <li class="resume-text">
+                    <div class="fw-bold">Postgraduate Studies in Finance and Accounting</div>
+                    <div class="text-muted">Wroclaw University of Economics</div>
+                    <div class="text-muted">2014 - 2015</div>
+                </li>
+            </ul>
+        </section>
+
+
+        <!--//awards-section-->
+        <section class="py-3">
+            <h4 class="text-uppercase border-start border-5 border-primary mb-4">
+                <span class="ps-3 text-primary">Awards</span>
+            </h4>
+            <ul class="list-unstyled">
+                <li>
+                    <div class="fw-bold resume-text">Quality Week 2017 Award</div>
+                    <div class="text-muted">Hewlett-Packard Enterprise Global Quality(2017)</div>
+                </li>
+            </ul>
+        </section>
+        <!--//languages-section-->
+        <section class="py-3">
+            <h4 class="text-uppercase border-start border-5 border-primary mb-4">
+                <span class="ps-3 text-primary">Languages</span>
+            </h4>
+            <ul class="list-unstyled resume-text">
+                <li class="mb-2">Polish <span class="text-muted">(Native)</span></li>
+                <li class="mb-2">English <span class="text-muted">(Professional)</span></li>
+            </ul>
+        </section>
+        <!--//interests-section-->
+        <section class="py-3">
+            <h4 class="text-uppercase border-start border-5 border-primary mb-4">
+                <span class="ps-3 text-primary">Interests</span>
+            </h4>
+            <ul class="list-unstyled resume-interests-list mb-0">
+                <li class="mb-2">Freeride Skiing</li>
+                <li class="mb-2">Martial Arts</li>
+                <li class="mb-2">Investing</li>
+                <li class="mb-2">Cooking</li>
+                <li>Traveling</li>
+            </ul>
+        </section>
+
+    </aside><!--//resume-aside-->
+    </div><!--//row-->
+    </div><!--//resume-body-->
+    <hr>
+    <div class="row">
+        <div class="col-12">
+            <p id="consent" class="text-muted mb-0">
+                I hereby give consent for my personal data included in my application to be processed for the
+                purposes of the current and all future recruitment processes under the European Parliament's and
+                Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016,
+                with regard to the processing of personal data and on the free movement of such data, and repealing
+                Directive 95/46/EC (Data Protection Directive).
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <div id="resume-footer" class="text-center">
+        <ul class="list-inline mx-auto mb-0 d-inline-block text-muted">
+            <li class="list-inline-item mb-lg-0 me-3 ">
+                <a class="d-sm-flex align-content-center" href="#">
+                    <i class="fab fa-github-square fa-2x me-2"></i><span class="d-none d-sm-inline-block text-muted d-sm-flex align-self-center">github.com/drugOnFly</span>
+                </a>
+            </li>
+            <li class="list-inline-item mb-lg-0 me-3">
+                <a class="d-sm-flex align-content-center" href="#">
+                    <i class="fab fa-linkedin fa-2x me-2"></i><span class="d-none d-sm-inline-block text-muted d-sm-flex align-self-center">linkedin.com/in/username</span>
+                </a>
+            </li>
+        </ul>
+    </div><!--//resume-footer-->
+    </article>
+    </div>
+    </div>
+    </div>
+</section>
