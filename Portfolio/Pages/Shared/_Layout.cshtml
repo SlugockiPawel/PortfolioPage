@@ -65,44 +65,43 @@
 
             <ul id="navigation-tabs" class="navbar-nav flex-lg-column col-12">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" asp-page="Index">
+                    <a class="nav-link @Html.ActiveClass("/Index") " aria-current="page" asp-page="Index">
                         <span class="me-3">
-                            <i class="fas fa-user-tie" aria-hidden="true" title="About Me"></i>
+                            <i class="fas fa-user-tie @Html.ActiveClass("/Index") " aria-hidden="true" title="About Me"></i>
                         </span>About Me
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" asp-page="Portfolio">
+                    <a class="nav-link @Html.ActiveClass("/Portfolio")" aria-current="page" asp-page="Portfolio">
                         <span class="me-3">
-                            <i class="far fa-file-code" aria-hidden="true" title="Portfolio"></i>
+                            <i class="far fa-file-code  @Html.ActiveClass("/Portfolio")" aria-hidden="true" title="Portfolio"></i>
                         </span>Portfolio
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" asp-page="Resume">
+                    <a class="nav-link @Html.ActiveClass("/Resume")" aria-current="page" asp-page="Resume">
                         <span class="me-3">
-                            <i class="fas fa-portrait" aria-hidden="true" title="Resume"></i>
+                            <i class="fas fa-portrait @Html.ActiveClass("/Resume")" aria-hidden="true" title="Resume"></i>
                         </span>Resume
                     </a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="#">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">
                         <span class="me-3">
                             <i class="fab fa-slack-hash" aria-hidden="true" title="Tech Blog"></i>
                         </span>Tech Blog
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" asp-page="Contact">
+                    <a class="nav-link @Html.ActiveClass("/Contact")" aria-current="page" asp-page="Contact">
                         <span class="me-3">
-                            <i class="far fa-comments" aria-hidden="true" title="Contact"></i>
+                            <i class="far fa-comments @Html.ActiveClass("/Contact")" aria-hidden="true" title="Contact"></i>
                         </span>Contact
                     </a>
                 </li>
             </ul>
 
             <a id="btn-hire" asp-page="Contact" class="btn btn-primary w-100 text-white my-3"> <i class="fas fa-paper-plane me-1"></i>Hire Me</a>
-
         </div>
     </div>
 

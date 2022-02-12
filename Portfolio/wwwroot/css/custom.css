@@ -28,9 +28,13 @@
 
 p { color: var(--bs-gray-700); }
 
+.page-active {
+    color: var(--bs-success) !important;
+}
 /*---------------Navbar Top (below lg breakpoint)-----------------*/
-
-.toggler-margin-left { margin-left: 12px; }
+.toggler-margin-left {
+    margin-left: 12px;
+}
 
 /*--> social list*/
 
@@ -50,6 +54,10 @@ p { color: var(--bs-gray-700); }
 #social-list a:hover {
     transition: all 0.4s ease-in-out;
     background-color: var(--bs-success);
+}
+
+#navigation-tabs a {
+    color: var(--bs-light);
 }
 
 #navigation-tabs i {
