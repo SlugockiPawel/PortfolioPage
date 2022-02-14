@@ -32,15 +32,8 @@ app.MapRazorPages();
 app.Run();
 
 /*
-    TODO how to transform navbar from top to sidebar
-    TODO make social icon background a circle and add it as bootstrap class
-    TODO how to make <ul> wrap on narrow screen one item by one
-
- * TODO add About Me View
- * TODO add Contact View
- * TODO add Portfolio View
- * TODO add The Blog project ref
- * TODO add email service to contact form
- *
+    *TODO read about Varying modal content on bootstrap site
+    *TODO add backdrop modal after message is sent in Contact Me form (close will redirect to Index Page)
+    *
  
  */
