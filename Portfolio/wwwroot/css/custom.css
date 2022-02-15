@@ -4,7 +4,8 @@
     --navbar-sidebar-width: 280px;
     --profile-pic-max-height: 300px;
     --tech-item-size-small: 80px;
-    --tech-item-size-big: 100px;
+    --tech-item-size-medium: 130px;
+    --tech-item-size-big: 150px;
 }
 
 /*
@@ -113,7 +114,19 @@ p { color: var(--bs-gray-700); }
     max-height: var(--tech-item-size-small);
 }
 
+
 @media (min-width: 400px) {
+    .tech-item > img {
+        width: var(--tech-item-size-medium);
+        height: var(--tech-item-size-medium);
+        min-width: var(--tech-item-size-medium);
+        min-height: var(--tech-item-size-medium);
+        max-width: var(--tech-item-size-medium);
+        max-height: var(--tech-item-size-medium);
+    }
+}
+
+@media (min-width: 1199.8px) {
     .tech-item > img {
         width: var(--tech-item-size-big);
         height: var(--tech-item-size-big);
