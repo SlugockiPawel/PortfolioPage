@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
-using Portfolio.Models;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using MimeKit;
+using Portfolio.Models;
 
 namespace Portfolio.Services
 {
