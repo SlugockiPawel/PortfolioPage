@@ -9,6 +9,23 @@
   PRE LOADER
 -------------------------------------------------------------------------------*/
 
-$(window).on('load', function () {
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+//$(window).on('load', function () {
+//    $('.preloader').fadeOut(1000); // set duration in brackets    
+//});
+
+
+
+/*-------------------------------------------------------------------------------
+  Modals
+-------------------------------------------------------------------------------*/
+
+//modal carousel
+
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        margin: 10,
+        loop: false,
+        autoHeight: true,
+        items: 1
+    });
 });
