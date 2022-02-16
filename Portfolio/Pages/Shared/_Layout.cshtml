@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.custom.css"/>
     <link rel="stylesheet" href="~/css/custom.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    @* <link rel="stylesheet" href="~/css/style.css" asp-append-version="true"/> *@
-    @* <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet"> *@
+    <link rel="stylesheet" href="~/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 </head>
 <body class="d-lg-flex">
 
@@ -121,10 +121,12 @@
 
 
 <!-- SCRIPTS -->
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/custom.js" asp-append-version="true"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 
-@await RenderSectionAsync("Scripts", required: false)
+<script src="~/js/custom.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: true)
 </body>
 </html>
