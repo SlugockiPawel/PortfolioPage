@@ -3,8 +3,6 @@
 
 // Write your JavaScript code.
 
-
-
 /*-------------------------------------------------------------------------------
   PRE LOADER
 -------------------------------------------------------------------------------*/
@@ -14,14 +12,23 @@
 //});
 
 
-
 /*-------------------------------------------------------------------------------
   Modals
 -------------------------------------------------------------------------------*/
 
+//email modal
+
+function showEmailModal() {
+    $('#EmailSentModal').show();
+}
+
+function modalDispose() {
+    $('#EmailSentModal').remove();
+}
+
 //modal carousel
 
-$(document).ready(function () {
+$(document).ready(function() {
     $(".owl-carousel").owlCarousel({
         margin: 10,
         loop: false,
