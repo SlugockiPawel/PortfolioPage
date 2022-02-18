@@ -45,6 +45,8 @@ namespace Portfolio.Pages
             model.Message = $"{model.Message} <hr/>";
             await _emailSender.SendContactEmailAsync(model.Email, model.Name, model.Subject, model.Message);
 
+            TempData["MailSent"] = true;
+
             return RedirectToPage("Index");
         }
     }
