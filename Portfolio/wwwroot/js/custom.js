@@ -31,8 +31,11 @@ function modalDispose() {
 $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
         margin: 10,
-        loop: false,
+        loop: true,
         autoHeight: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 4000,
         items: 1
     });
 });
