@@ -21,7 +21,7 @@ namespace Portfolio.Data
                     GithubUrl = "https://gitHubUrl",
                     ProjectUrl = "https://www.slugocki.dev",
                     CardImage = "images/projects/project-4.jpg",
-                    CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/project-4.jpg" },
+                    CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-6.jpg" },
                     Technologies = new List<Technology>() { Technology.Bootstrap5, Technology.CSS3 },
                     IsLeadProject = true,
                 },
@@ -40,7 +40,7 @@ namespace Portfolio.Data
                 },
                 new ProjectModel()
                 {
-                    Id = 2,
+                    Id = 3,
                     Title = "The Movie Store",
                     Abstract = "This is some abstract for now for The Movie Store. Update it later",
                     Description = "This is broader description. Update it later.",
@@ -48,7 +48,23 @@ namespace Portfolio.Data
                     GithubUrl = "https://gitHubUrl",
                     ProjectUrl = "https://www.slugocki.dev",
                     CardImage = "images/projects/project-4.jpg",
-                    CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/project-4.jpg" },
+                    CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-4.jpg",  "images/projects/item-6.jpg" },
+                    Technologies = new List<Technology>() { Technology.Bootstrap5, Technology.CSS3 },
+                },
+
+                // Mini projects
+                new ProjectModel()
+                {
+                    Id = 4,
+                    IsMainProject = false,
+                    Title = "The Loan Unicorn",
+                    Abstract = "This is some abstract for now for The Loan Unicorn. Update it later",
+                    Description = "This is broader description for Loan Unicorn. Update it later.",
+                    Date = new DateOnly(2022, 02, 13),
+                    GithubUrl = "https://gitHubUrl",
+                    ProjectUrl = "https://www.slugocki.dev",
+                    CardImage = "images/projects/item-4.jpg",
+                    CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-4.jpg",  "images/projects/item-6.jpg" },
                     Technologies = new List<Technology>() { Technology.Bootstrap5, Technology.CSS3 },
                 },
             });
