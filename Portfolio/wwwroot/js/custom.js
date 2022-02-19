@@ -16,15 +16,24 @@
   Modals
 -------------------------------------------------------------------------------*/
 
-//email modal
-
+//email modal (sweetalert2)
 function showEmailModal() {
-    $('#EmailSentModal').show();
+    customSwal.fire({
+        title: 'Success!',
+        text: 'Thank You for your message. I will reply as soon as possible.',
+        confirmButtonText: 'OK'
+    });
 }
 
-function modalDispose() {
-    $('#EmailSentModal').remove();
-}
+const customSwal = Swal.mixin({
+    customClass: {
+        confirmButton: 'btn btn-primary text-light'
+    },
+    icon: 'success',
+    iconColor:'#2c6b78',
+    buttonsStyling: false
+});
+
 
 //modal carousel
 
