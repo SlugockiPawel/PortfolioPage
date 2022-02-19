@@ -1,98 +1,25 @@
 ﻿<div class="row">
-            <div class="col-12 col-md-4 col-lg-6 col-xl-4 mb-3">
 
-                <div class="card rounded-0 bg-light overflow-hidden h-100">
-                    <img src="images/blog_posts/blog-post-thumb-card-2.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="card-link">
-                            <a class="text-secondary" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
+    @foreach (var project in ProjectsData.ProjectsList.Where(project => project.IsMainProject == false))
+    {
+        <div class="col-12 col-md-4 col-lg-6 col-xl-4 mb-3">
 
-            <div class="col-12 col-md-4 col-lg-6 col-xl-4 mb-3">
-                <div class="card rounded-0 bg-light overflow-hidden h-100">
-                    <img src="images/blog_posts/blog-post-thumb-card-3.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <div class="card-link">
-                            <a class="text-secondary" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+            <div class="card rounded-0 bg-light overflow-hidden h-100">
+                <img src="@project.CardImage" class="card-img rounded-0" alt="@project.Title card image">
+                <div class="card-body">
+                    <h5 class="card-title">@project.Title</h5>
+                    <p class="card-text mt-5">@project.Abstract</p>
+                    <div class="card-link">
+                        <a class="text-secondary" href="#" data-bs-toggle="modal" data-bs-target="#modal-@project.Id">View Details</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-4 col-lg-6 col-xl-4 mb-3">
-                <div class="card rounded-0 bg-light overflow-hidden h-100">
-                    <img src="images/blog_posts/blog-post-thumb-card-2.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <div class="card-link">
-                            <a class="text-secondary" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-12 col-md-4 col-lg-6 col-xl-4 mb-3">
-                <div class="card rounded-0 bg-light overflow-hidden h-100">
-                    <img src="images/blog_posts/blog-post-thumb-card-2.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <div class="card-link">
-                            <a class="text-secondary" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-12 col-md-4 col-lg-6 col-xl-4 mb-3">
-                <div class="card rounded-0 bg-light overflow-hidden h-100">
-                    <img src="images/blog_posts/blog-post-thumb-card-2.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <div class="card-link">
-                            <a class="text-secondary" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-12 col-md-4 col-lg-6 col-xl-4 mb-3">
-                <div class="card rounded-0 bg-light overflow-hidden h-100">
-                    <img src="images/blog_posts/blog-post-thumb-card-2.jpg" class="card-img-top rounded-0" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <div class="card-link">
-                            <a class="text-secondary" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
+                <div class="card-footer">
+                    <small class="text-muted fw-bolder"> <span class="fw-bolder">Date:</span> @project.Date.ToString("dd MMMMM yyyy")</small>
                 </div>
             </div>
         </div>
+    }
+</div>
+
+<!--Projects Modals -->
+<partial name="Partials/ProjectModal"/>
