@@ -32,14 +32,5 @@ app.MapRazorPages();
 app.Run();
 
 /*
-   TODO create Project ViewModel
-    TODO create ProjectSeeder (service or seed at app startup?)
-    TODO create img encrypt-decrypt service
-    TODO populate ProjectList to partial views and populate cards
-    TODO based on card clicked- create dynamically modals
-
-
-    *TODO add backdrop modal after message is sent in Contact Me form (close will redirect to Index Page)
-    *
- 
+    *TODO connect Blog posts to Portfolio
  */
