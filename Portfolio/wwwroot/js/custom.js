@@ -32,7 +32,7 @@ $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
         margin: 10,
         loop: true,
-        autoHeight: true,
+//        autoHeight: true,
         autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 4000,
