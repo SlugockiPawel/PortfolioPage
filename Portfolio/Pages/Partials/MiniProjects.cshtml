@@ -7,8 +7,10 @@
             <div class="card rounded-0 bg-light overflow-hidden h-100">
                 <img src="@project.CardImage" class="card-img rounded-0" alt="@project.Title card image">
                 <div class="card-body">
-                    <h5 class="card-title">@project.Title</h5>
-                    <p class="card-text mt-5">@project.Abstract</p>
+                    <h5 class="card-title fw-bolder border-primary border-bottom d-inline-block">@project.Title</h5>
+                    <div class="card-text mt-3">
+                        @Html.Raw(project.Abstract)
+                    </div>
                     <div class="card-link">
                         <a class="text-secondary" href="#" data-bs-toggle="modal" data-bs-target="#modal-@project.Id">View Details</a>
                     </div>
