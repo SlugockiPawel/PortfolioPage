@@ -31,9 +31,9 @@
                             </h3>
                         </div>
                         <div class="modal-body pe-0 fs-6">
-                            <p class="mb-4">
-                                @project.Description
-                            </p>
+                            <div class="mb-4">
+                                @Html.Raw(project.Description)
+                            </div>
                             
                             <ul class="list-inline list-unstyled mb-0">
                                 <li class="list-inline-item w-50"> <span class="fw-bolder me-2">Date:</span> @project.Date.ToString("dd MMMMM yyyy")</li>
