@@ -29,13 +29,11 @@
 
 p { color: var(--bs-gray-700); }
 
-.page-active {
-    color: var(--bs-success) !important;
-}
+.page-active { color: var(--bs-success) !important; }
+
 /*---------------Navbar Top (below lg breakpoint)-----------------*/
-.toggler-margin-left {
-    margin-left: 12px;
-}
+
+.toggler-margin-left { margin-left: 12px; }
 
 /*--> social list*/
 
@@ -57,9 +55,7 @@ p { color: var(--bs-gray-700); }
     background-color: var(--bs-success);
 }
 
-#navigation-tabs a {
-    color: var(--bs-light);
-}
+#navigation-tabs a { color: var(--bs-light); }
 
 #navigation-tabs i {
     min-width: 16px;
@@ -139,13 +135,23 @@ p { color: var(--bs-gray-700); }
 
 /*--------------- Projects-section -----------------*/
 
-#projects-section .card-body { background: var(--bs-gray-100); }
+#projects-section .card-body {
+    background: var(--bs-gray-100);
+   
+}
 
-.card-leader { max-width: 800px; }
+.card-body-other {
+    min-height: 250px;
+}
+
+.card-leader {
+    max-width: 800px;
+}
 
 .lead-card-img-holder { max-height: 400px; }
 
 .card-img-holder { max-height: 190px; }
+
 
 .card .link-mask {
     position: absolute;
@@ -191,8 +197,12 @@ p { color: var(--bs-gray-700); }
     .lead-card-img-holder { max-height: 300px; }
 }
 
-@media (min-width: 1500px) {
-    .card-img-holder { max-height: 290px; }
+@media (min-width: 1499px) {
+    .card-img-holder { max-height: 300px; }
+}
+
+@media (min-width: 767px) and (max-width: 1499px) {
+    #projects-section .card-body-other { min-height: 277px; }
 }
 
 
@@ -218,22 +228,16 @@ p { color: var(--bs-gray-700); }
 
 #resume-section .container-fluid { background: var(--bs-gray-100); }
 
-#resume-contact {
-    border-left: 1px solid var(--bs-gray-300);
-}
+#resume-contact { border-left: 1px solid var(--bs-gray-300); }
 
-#img-resume {
-    max-width: 120px;
-}
+#img-resume { max-width: 120px; }
 
 #consent {
     font-size: 0.7rem;
     color: var(--bs-gray-100);
 }
 
-#resume-footer {
-    font-size: 0.75rem;
-}
+#resume-footer { font-size: 0.75rem; }
 
 .resume-name {
     font-weight: 900;
