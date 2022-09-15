@@ -6,7 +6,7 @@ using Portfolio.Models;
 
 namespace Portfolio.Services
 {
-    public class EmailService : IPortfolioEmailSender
+    public sealed class EmailService : IPortfolioEmailSender
     {
         private readonly EmailSettings _emailSettings;
 

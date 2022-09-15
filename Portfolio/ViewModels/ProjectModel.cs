@@ -2,7 +2,7 @@
 
 namespace Portfolio.ViewModels
 {
-    public class ProjectModel
+    public sealed class ProjectModel
     {
         public int Id { get; init; }
         public bool IsMainProject { get; init; } = true;

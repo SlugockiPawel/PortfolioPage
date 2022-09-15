@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Portfolio.Pages
 {
-    public class ResumeModel : PageModel
+    public sealed class ResumeModel : PageModel
     {
         public void OnGet()
         {

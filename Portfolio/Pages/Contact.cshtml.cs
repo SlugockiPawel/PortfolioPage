@@ -6,7 +6,7 @@ using Portfolio.Services;
 namespace Portfolio.Pages
 {
     [ValidateAntiForgeryToken]
-    public class ContactModel : PageModel
+    public sealed class ContactModel : PageModel
     {
         private readonly IPortfolioEmailSender _emailSender;
         public ContactModel(IPortfolioEmailSender emailSender)
@@ -16,7 +16,7 @@ namespace Portfolio.Pages
 
         [BindProperty] public InputModel Input { get; set; } = new();
 
-        public class InputModel
+        public sealed class InputModel
         {
             [Required]
             [StringLength(80, ErrorMessage = "The {0} must be between {2} and {1} characters long.", MinimumLength = 2)]
