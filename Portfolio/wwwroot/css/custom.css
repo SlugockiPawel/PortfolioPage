@@ -230,7 +230,7 @@ p { color: var(--bs-gray-700); }
 
 #resume-contact { border-left: 1px solid var(--bs-gray-300); }
 
-#img-resume { max-width: 120px; }
+#img-resume { max-width: 140px; }
 
 #consent {
     font-size: 0.7rem;
