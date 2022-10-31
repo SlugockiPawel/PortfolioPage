@@ -187,8 +187,14 @@ public static class ProjectsData
                 Date = new DateOnly(2021, 08, 02),
                 GithubUrl = "https://github.com/SlugockiPawel/Rewind",
                 ProjectUrl = "https://www.slugocki.dev",
-                CardImage = "images/projects/item-6.jpg",
-                CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-6.jpg" },
+                CardImage = "/images/projects/rewind_screenshots/MainPage.png",
+                CarouselImages = new List<string>()
+                {
+                    "/images/projects/rewind_screenshots/MainPage.png",
+                    "/images/projects/rewind_screenshots/NoResult.png",
+                    "/images/projects/rewind_screenshots/Result.png",
+                    "/images/projects/rewind_screenshots/Code.png",
+                },
                 Technologies = new List<Technology>()
                     { Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.JavaScript, Technology.Git },
             },
