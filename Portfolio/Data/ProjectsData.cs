@@ -94,9 +94,13 @@ public static class ProjectsData
                 Date = new DateOnly(2021, 08, 12),
                 GithubUrl = "https://github.com/SlugockiPawel/LoanUnicorn",
                 ProjectUrl = "https://www.slugocki.dev",
-                CardImage = "images/projects/item-4.jpg",
-                CarouselImages = new List<string>()
-                    { "images/projects/project-4.jpg", "images/projects/item-4.jpg", "images/projects/item-6.jpg" },
+                CardImage = "/images/projects/loan_unicorn_screenshots/MainPage.png",
+                CarouselImages = new List<string>() { 
+                    "/images/projects/loan_unicorn_screenshots/MainPage.png",
+                    "/images/projects/loan_unicorn_screenshots/NoResult.png",
+                    "/images/projects/loan_unicorn_screenshots/Result.png",
+                    "/images/projects/loan_unicorn_screenshots/Code.png",
+                },
                 Technologies = new List<Technology>()
                     { Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.JavaScript, Technology.Git },
             },
@@ -136,13 +140,17 @@ public static class ProjectsData
                     "<p>FizzBuzz application is a .NET MVC program that solves famous coding trivia- fizz-buzz.</p>" +
                     "<p>User is presented with 0-100 number range table where each value is displayed according to fizzBuzz algorithm:</p>"
                     + "<p>If the number is divisible by 3 and 5 - displayed value is <span class='fst-italic'> FizzBuzz </span>. If the number is divisible by 3 - displayed value is <span class='fst-italic'> Fizz </span>. If divisible by 5 - <span class='fst-italic'>Buzz.</span></p>",
-
-
+                
                 Date = new DateOnly(2021, 08, 24),
                 GithubUrl = "https://github.com/SlugockiPawel/FizzBuzz",
-                ProjectUrl = "https://www.slugocki.dev",
+                ProjectUrl = "/images/projects/fizzbuzz_screenshots/MainPage.png",
                 CardImage = "images/projects/item-6.jpg",
-                CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-6.jpg" },
+                CarouselImages = new List<string>() { 
+                    "/images/projects/fizzbuzz_screenshots/MainPage.png",
+                    "/images/projects/fizzbuzz_screenshots/NoResult.png",
+                    "/images/projects/fizzbuzz_screenshots/Result.png",
+                    "/images/projects/fizzbuzz_screenshots/Code.png",
+                },
                 Technologies = new List<Technology>()
                     { Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.JavaScript, Technology.Git },
             },
