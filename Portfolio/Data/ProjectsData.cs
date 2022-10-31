@@ -198,18 +198,22 @@ public static class ProjectsData
                 IsMainProject = false,
                 Title = "Speedometer JS",
                 Abstract =
-                    "<p>Rewind is a small Javascript application that shows numbers in user specified range.</p>" +
+                    "<p>Speedometer is a small Javascript application that shows numbers in user specified range.</p>" +
                     "<p>Even number in displayed range are made bold.</p>",
 
                 Description =
-                    "<p>Rewind is a small Javascript application that shows numbers in user specified range.</p>" +
+                    "<p>Speedometer is a small Javascript application that shows numbers in user specified range.</p>" +
                     "<p>Even number in displayed range are made bold.</p>",
 
                 Date = new DateOnly(2021, 07, 28),
                 GithubUrl = "https://github.com/SlugockiPawel/Speedometer",
                 ProjectUrl = "https://www.slugocki.dev",
-                CardImage = "images/projects/item-6.jpg",
-                CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-6.jpg" },
+                CardImage = "/images/projects/speedometer_screenshots/MainPage.png",
+                CarouselImages = new List<string>() { "/images/projects/speedometer_screenshots/MainPage.png",
+                    "/images/projects/speedometer_screenshots/NoResult.png",
+                    "/images/projects/speedometer_screenshots/Result.png",
+                    "/images/projects/speedometer_screenshots/Code.png",
+                },
                 Technologies = new List<Technology>()
                     { Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.JavaScript, Technology.Git },
             },
@@ -230,8 +234,12 @@ public static class ProjectsData
                 Date = new DateOnly(2021, 08, 11),
                 GithubUrl = "https://github.com/SlugockiPawel/tacocat",
                 ProjectUrl = "https://www.slugocki.dev",
-                CardImage = "images/projects/item-6.jpg",
-                CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-6.jpg" },
+                CardImage = "/images/projects/tacocat_screenshots/MainPage.png",
+                CarouselImages = new List<string>() { "/images/projects/tacocat_screenshots/MainPage.png",
+                    "/images/projects/tacocat_screenshots/Palindrome.png",
+                    "/images/projects/tacocat_screenshots/NotPalindrome.png",
+                    "/images/projects/tacocat_screenshots/Code.png",
+                },
                 Technologies = new List<Technology>()
                     { Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.JavaScript, Technology.Git },
             },

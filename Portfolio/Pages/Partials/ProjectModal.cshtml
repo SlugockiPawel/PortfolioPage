@@ -12,13 +12,13 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row d-flex align-items-center">
                     <div class="col-12 col-lg-5 mt-lg-5 mt-3">
                         <div class="owl-carousel owl-theme">
                             @foreach (var img in project.CarouselImages)
                             {
                                 <div class="item">
-                                    <img class="img-fluid" src="@img"/>
+                                    <img class="img-fluid" src="@img" alt="img"/>
                                 </div>
                             }
                         </div>
