@@ -1,4 +1,5 @@
 ﻿@page
+@using Portfolio.Enums
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -11,18 +12,27 @@
                 <h1 class="fw-bold">Pawel Slugocki</h1>
                 <p class="lead">Back-End focused Full Stack .NET Developer</p>
                 <p class="mb-1">
-                    I'm a software engineer specialized in building custom Web applications using C# .NET Core framework. I live in <span class="fw-bolder">Wroclaw, Poland</span> and write about software development on <a href="#" class="text-secondary fw-bolder">my blog</a>.
+                    I'm a software engineer specialized in building custom Web applications 
+                    using C# .NET Core framework. I live in 
+                    <span class="fw-bolder">Wroclaw, Poland</span> and write about software development on 
+                    <a href="#" class="text-secondary fw-bolder">my blog</a>.
                 </p>
-                <p class="">Feel free to check my project <a asp-page="Portfolio" class="fw-bolder text-secondary">portfolio</a> and <a asp-page="Resume" class="text-secondary fw-bolder">online resume</a>.</p>
+                <p class="">Feel free to check my project 
+                    <a asp-page="Portfolio" class="fw-bolder text-secondary">portfolio</a> and 
+                    <a asp-page="Resume" class="text-secondary fw-bolder">online resume</a>.</p>
                 <p class="text-secondary fw-bolder">Currently I am available for work</p>
                 <div class="col-12 d-flex flex-wrap">
-                    <a class="btn btn-primary fw-bolder mt-2 me-3 text-white" asp-page="Portfolio"> <i class="fas fa-arrow-alt-circle-right me-1"></i> View Portfolio</a>
-                    <a asp-page="Resume" class="btn btn-dark fw-bolder mt-2"> <i class="fas fa-portrait me-2"></i> View Resume</a>
+                    <a class="btn btn-primary fw-bolder mt-2 me-3 text-white" asp-page="Portfolio">
+                         <i class="fas fa-arrow-alt-circle-right me-1"></i> View Portfolio
+                    </a>
+                    <a asp-page="Resume" class="btn btn-dark fw-bolder mt-2"> <i class="fas fa-portrait me-2">
+                    </i> View Resume</a>
                 </div>
             </div>
 
-            <div class="col-12 px-lg-0 mx-lg-0 px-xl-2  col col-md-4 col-xl-5 mt-4 mt-md-0 d-xl-flex justify-content-xl-end align-content-xl-center">
-                <img id="profile-pic" class="img-fluid" src="images/profile-lg.jpg" alt="profile image"/>
+            <div class="col-12 px-lg-0 mx-lg-0 px-xl-2  col col-md-4 col-xl-5 mt-4 mt-md-0 d-xl-flex
+ justify-content-xl-end align-content-xl-center">
+                <img id="profile-pic" class="img-fluid" src="/images/profile-lg.jpg" alt="profile image"/>
             </div>
         </div>
     </div>
@@ -36,60 +46,31 @@
                     <span class="ps-3 h2 fw-bold">What I do</span>
                 </h2>
                 <p class="">
-                    Below you can find a quick overview of my skills and technologies I use for building <span class="fst-italic fw-bolder">Web Applications</span>.
+                    Below you can find a quick overview of my skills and technologies I use for building 
+                    <span class="fst-italic fw-bolder">Web Applications</span>.
                     I have more than 3 years of experience working for a global IT corporation where I was responsible
-                    for <span class="fst-italic fw-bolder">VBA desktop automation</span> and development of <span class="fst-italic fw-bolder">PowerBI dashboards</span> on local and global level within finance/payroll
+                    for <span class="fst-italic fw-bolder">VBA desktop automation</span> and development of 
+                    <span class="fst-italic fw-bolder">PowerBI dashboards</span>
+                    on local and global level within finance/payroll
                     departments.
-                    If you would like to find out more about my experience- please check my <a asp-page="Portfolio" class="fw-bolder text-secondary">project portfolio</a> and <a asp-page="Resume" class="fw-bolder text-secondary">online resume</a>.
+                    If you would like to find out more about my experience- please check my 
+                    <a asp-page="Portfolio" class="fw-bolder text-secondary">project portfolio</a> and 
+                    <a asp-page="Resume" class="fw-bolder text-secondary">online resume</a>.
                 </p>
             </div>
         </div>
 
-        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-lg-5 g-md-3 g-2 mt-3">
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/HTML5_logo.svg" alt="html logo image">
-                <h4 class="text-center fw-bolder pt-2">HTML5</h4>
-            </div>
-
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/CSS3_logo.svg" alt="css logo image">
-                <h4 class="text-center fw-bolder pt-2">CSS3</h4>
-            </div>
-
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/Bootstrap_logo.svg" alt="bootstrap logo image">
-                <h4 class="text-center fw-bolder pt-2">Bootstrap5</h4>
-            </div>
-
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/Js_logo.svg" alt="javascript logo image">
-                <h4 class="text-center fw-bolder pt-2">Javascript</h4>
-            </div>
-
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/C_sharp_logo.svg" alt="c sharp logo image">
-                <h4 class="text-center fw-bolder pt-2">C#</h4>
-            </div>
-
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/Net_core_logo.svg" alt="net core logo image">
-                <h4 class="text-center fw-bolder pt-2">MVC/Web API</h4>
-            </div>
-
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/dotNETCore.svg" alt="entity framework logo image">
-                <h4 class="text-center fw-bolder pt-2">Entity Framework</h4>
-            </div>
-
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/Postgresql_logo.svg" alt="postgresql logo image">
-                <h4 class="text-center fw-bolder pt-2">Postgresql</h4>
-            </div>
-
-            <div class="col tech-item d-flex flex-column">
-                <img class="img-fluid justify-content-center  align-self-center" src="images/tech_logos/Git_logo.svg" alt="git logo image">
-                <h4 class="text-center fw-bolder pt-2">GIT</h4>
-            </div>
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 g-lg-5 g-md-3 g-2 mt-3">
+            @foreach (var tech in Enum.GetValues<Technology>())
+            {
+                <div class="col tech-item d-flex flex-column">
+                    <img class="img-fluid justify-content-center  align-self-center" 
+                         src=@($"/images/tech_logos/{tech}.svg") 
+                         alt=@($"{tech} logo image")>
+                    <h4 class="text-center fw-bolder pt-2">@tech</h4>
+                </div>
+            }
+           
         </div>
     </div>
 </section>
@@ -107,7 +88,8 @@
        <partial name="Partials/MainProjects"/>
 
         <div class="col-12 mt-3 text-center">
-            <a class="btn btn-primary fw-bolder mt-2 text-white" asp-page="Portfolio"> <i class="fas fa-arrow-alt-circle-right me-1"></i> View Portfolio</a>
+            <a class="btn btn-primary fw-bolder mt-2 text-white" 
+               asp-page="Portfolio"> <i class="fas fa-arrow-alt-circle-right me-1"></i> View Portfolio</a>
         </div>
     </div>
 </section>
@@ -127,7 +109,9 @@
 
     <div class="container">
         <div class="col-12 mt-3 text-center">
-            <a class="btn btn-primary fw-bolder mt-2 text-white" href="#"> <i class="fas fa-arrow-alt-circle-right me-1"></i> View Blog</a>
+            <a class="btn btn-primary fw-bolder mt-2 text-white" href="#">
+                <i class="fas fa-arrow-alt-circle-right me-1"></i> View Blog
+            </a>
         </div>
     </div>
 </section>
@@ -137,7 +121,8 @@
  @if (TempData["MailSent"] is  not null)
 { 
     <!-- Modal -->
-<div class="modal" id="EmailSentModal" data-bs-keyboard="false" data-bs-toggle="modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal" id="EmailSentModal" data-bs-keyboard="false" 
+         data-bs-toggle="modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog  modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
