@@ -3,6 +3,7 @@
     public enum Technology
     {
         Html5,
+        Angular,
         CSS3,
         Bootstrap5,
         JavaScript,
