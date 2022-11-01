@@ -8,7 +8,7 @@ namespace Portfolio.Services
         {
             var routeData = htmlHelper.ViewContext.RouteData;
 
-            var pageRoute = routeData.Values["page"].ToString();
+            var pageRoute = routeData.Values["page"]!.ToString();
 
             return route == pageRoute ? "page-active" : "";
         }
