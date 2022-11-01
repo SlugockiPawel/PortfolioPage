@@ -6,7 +6,6 @@ namespace Portfolio.ViewModels
     {
         public int Id { get; init; }
         public bool IsMainProject { get; init; } = true;
-        public bool IsLeadProject { get; init; } = false;
         public string Title { get; init; } = default!;
         public string Abstract { get; init; } = default!;
         public string Description { get; init; } = default!;
