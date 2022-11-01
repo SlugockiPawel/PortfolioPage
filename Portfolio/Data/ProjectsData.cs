@@ -106,29 +106,6 @@ public static class ProjectsData
             },
             new ProjectModel()
             {
-                Id = 5,
-                IsMainProject = false,
-                Title = "The Loan Calculator MVC",
-                Abstract = "<p>The Loan Calculator app is a small .NET MVC loan calculator.</p>" +
-                           "<p>The app takes user input needed for loan and calculates payment schedule.</p>",
-
-                Description = "<p>The Loan Unicorn app is a small .NET MVC loan calculator.</p>" +
-                              "<p>The app takes user input needed for loan and calculates payment schedule.</p>",
-
-                Date = new DateOnly(2021, 08, 24),
-                GithubUrl = "https://github.com/SlugockiPawel/LoanCalculatorMVC",
-                ProjectUrl = "https://www.slugocki.dev",
-                CardImage = "images/projects/item-4.jpg",
-                CarouselImages = new List<string>()
-                    { "images/projects/project-4.jpg", "images/projects/item-4.jpg", "images/projects/item-6.jpg" },
-                Technologies = new List<Technology>()
-                {
-                    Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.CSharp, Technology.MVC,
-                    Technology.Git
-                },
-            },
-            new ProjectModel()
-            {
                 Id = 6,
                 IsMainProject = false,
                 Title = "FizzBuzz JS",
@@ -143,8 +120,8 @@ public static class ProjectsData
                 
                 Date = new DateOnly(2021, 08, 24),
                 GithubUrl = "https://github.com/SlugockiPawel/FizzBuzz",
-                ProjectUrl = "/images/projects/fizzbuzz_screenshots/MainPage.png",
-                CardImage = "images/projects/item-6.jpg",
+                ProjectUrl = "https://www.slugocki.dev",
+                CardImage = "/images/projects/fizzbuzz_screenshots/MainPage.png",
                 CarouselImages = new List<string>() { 
                     "/images/projects/fizzbuzz_screenshots/MainPage.png",
                     "/images/projects/fizzbuzz_screenshots/NoResult.png",
@@ -153,31 +130,6 @@ public static class ProjectsData
                 },
                 Technologies = new List<Technology>()
                     { Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.JavaScript, Technology.Git },
-            },
-            new ProjectModel()
-            {
-                Id = 7,
-                IsMainProject = false,
-                Title = "FizzBuzz MVC",
-                Abstract =
-                    "<p>FizzBuzz application is a .NET MVC program that solves famous coding trivia- fizz-buzz.</p>" +
-                    "<p>User is presented with 0-100 number range table where each value is displayed according to fizzBuzz algorithm - click below for further details.</p>",
-
-                Description =
-                    "<p>FizzBuzz application is a .NET MVC program that solves famous coding trivia- fizz-buzz.</p>" +
-                    "<p>User is presented with 0-100 number range table where each value is displayed according to fizzBuzz algorithm:</p>"
-                    + "<p>If the number is divisible by 3 and 5 - displayed value is <span class='fst-italic'> FizzBuzz </span>. If the number is divisible by 3 - displayed value is <span class='fst-italic'> Fizz </span>. If divisible by 5 - <span class='fst-italic'>Buzz.</span></p>",
-
-                Date = new DateOnly(2021, 08, 22),
-                GithubUrl = "https://github.com/SlugockiPawel/FizzBuzzMVC",
-                ProjectUrl = "https://www.slugocki.dev",
-                CardImage = "images/projects/item-6.jpg",
-                CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-6.jpg" },
-                Technologies = new List<Technology>()
-                {
-                    Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.CSharp, Technology.MVC,
-                    Technology.Git
-                },
             },
             new ProjectModel()
             {
@@ -256,31 +208,6 @@ public static class ProjectsData
                 },
                 Technologies = new List<Technology>()
                     { Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.JavaScript, Technology.Git },
-            },
-            new ProjectModel()
-            {
-                Id = 11,
-                IsMainProject = false,
-                Title = "Tacocat MVC",
-                Abstract =
-                    "<p>Tacocat is a >NET MVC app which solves popular coding trivia- it checks if a string provided by the user is a palindrome.</p>" +
-                    "<p>String is taken from the user via web form and the result is returned back to the user in the same view</p>",
-
-                Description =
-                    "<p>Tacocat is a .NET MVC app which solves popular coding trivia- it checks if a string provided by the user is a palindrome.</p>" +
-                    "<p>palindrome is a word that reads the same as its reversed string(e.g. 'tacocat', because reading it backwords is also 'tacocat'</p>" +
-                    "<p>String is taken from the user via web form and the result is returned back to the user in the same view</p>",
-
-                Date = new DateOnly(2021, 08, 19),
-                GithubUrl = "https://github.com/SlugockiPawel/TacoCatMVCApp",
-                ProjectUrl = "https://www.slugocki.dev",
-                CardImage = "images/projects/item-6.jpg",
-                CarouselImages = new List<string>() { "images/projects/project-4.jpg", "images/projects/item-6.jpg" },
-                Technologies = new List<Technology>()
-                {
-                    Technology.Html5, Technology.CSS3, Technology.Bootstrap5, Technology.CSharp, Technology.MVC,
-                    Technology.Git
-                },
             },
         });
     }
