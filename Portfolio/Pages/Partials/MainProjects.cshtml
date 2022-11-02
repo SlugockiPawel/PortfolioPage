@@ -1,36 +1,34 @@
 ﻿<div class="row row-cols-1 row-cols-md-2">
     @* Other cards *@
-    @foreach (var project in ProjectsData.ProjectsList.Where(p => p.IsMainProject))
-    {
-        <div class="col-12 col-md-6 mb-2">
-            <div class="card h-100 rounded-0 overflow-hidden">
-                <div class="row h-100 g-0 d-flex justify-content-between ">
-                    <div class="col-12 col-xxxl-5 card-img-holder overflow-hidden ">
-                        <img src="@project.CardImage" class="card-img rounded-0" alt="@project.Title card image">
-                    </div>
-                    <div class="col-12 col-xxxl-7 d-flex flex-column justify-content-between">
-                        <div class="card-body card-body-other pb-0">
-                            <h4 class="card-title fw-bolder border-bottom border-3 d-inline border-primary">@project.Title</h4>
-                            <div class="card-text mt-3">
-                                @Html.Raw(project.Abstract)
-                            </div>
+     @foreach (var project in ProjectsData.ProjectsList.Where(project => project.IsMainProject))
+        {
+            <div class="col-12 col-md-4 col-lg-6 col-xl-4 mb-3">
+    
+                <div class="card rounded-0 bg-light overflow-hidden h-100">
+                    <img src="@project.CardImage" class="card-img rounded-0" alt="@project.Title card image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder border-primary border-bottom d-inline-block">@project.Title</h5>
+                        <div class="card-text mt-3">
+                            @Html.Raw(project.Abstract)
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted fw-bolder">
-                                <span class="fw-bolder">Date:</span> @project.Date.ToString("dd MMMMM yyyy")
-                            </small>
+                        <div class="card-link">
+                            <a class="text-secondary fw-bolder" href="#" data-bs-toggle="modal" data-bs-target="#modal-@project.Id">View Details</a>
                         </div>
                     </div>
-                </div>
-                <div class="link-mask">
-                    <div class="link-mask-link">
-                        <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-@project.Id"> <i class="fas fa-eye me-3"></i>View Details</a>
+                    <div class="card-footer">
+                        <small class="text-muted fw-bolder"> <span class="fw-bolder">Date:</span> @project.Date.ToString("dd MMMMM yyyy")</small>
+                    </div>
+                    <div class="link-mask">
+                        <div class="link-mask-link">
+                            <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-@project.Id"> <i class="fas fa-eye me-3"></i>View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    }
-</div>
+        }
+    </div>
+    
+    
 
 
 <!--Projects Modals -->
