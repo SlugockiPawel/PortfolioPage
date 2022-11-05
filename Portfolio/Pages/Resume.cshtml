@@ -168,37 +168,20 @@
 
     <section id="project-section" class="py-3">
         <h4 class="text-uppercase border-start border-5 border-primary mb-4">
-            <span class="ps-3 text-primary">Projects</span>
+            <span class="ps-3 text-primary mb-3">Projects</span>
         </h4>
-        <div class="mb-3">
-            <div class="row align-items-center mb-2">
-                <h5 class="col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Bug Tracker</h5>
+        
+        @foreach (var project in ProjectsData.ProjectsList.Where(p => p.IsMainProject))
+        {
+            <div class="mb-3">
+                <div class="row align-items-center mb-2">
+                    <h5 class="col-12 col-md-6 col-lg-8 mb-2 mb-md-0">@project.Title</h5>
+                    </div>
+                    <div class="">
+                       @Html.Raw(project.Description)
+                    </div>
             </div>
-            <div class="">
-                <p>You can use this section for your side projects. You can <a href="#" class="theme-link">provide a project link here</a> as well. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-
-            </div>
-        </div><!--//item-->
-        <div class="">
-            <div class="row align-items-center mb-2">
-                <h5 class="col-12 col-md-6 col-lg-8 mb-2 mb-md-0">The Blog</h5>
-
-            </div>
-            <div class="">
-                <p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-
-            </div>
-        </div><!--//item-->
-        <div class="">
-            <div class="row align-items-center mb-2">
-                <h5 class="col-12 col-md-6 col-lg-8 mb-2 mb-md-0">MoviePro</h5>
-            </div>
-            <div class="">
-                <p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-
-            </div>
-        </div><!--//item-->
+        }
     </section><!--//project-section-->
 </div><!--//resume-main-->
 <aside class="col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">

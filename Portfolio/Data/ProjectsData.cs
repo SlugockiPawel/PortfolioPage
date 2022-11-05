@@ -17,9 +17,9 @@ public static class ProjectsData
                     Id = 1,
                     Title = "The Bug Tracker",
                     Abstract =
-                        "<p>Issue tracking app. Built to support multiple companies and support different user roles. The main idea behind this app is to use .NET Core framework and MVC to built business grade application.",
+                        "<p>Issue tracking app. Built to support multiple companies and support different user roles. The main idea behind this app is to use .NET Core framework and MVC to build business grade application.",
                     Description =
-                        "<p>The Bug Tracker is an issue tracking app, where users can create issue tickets.</p> <p>Project Managers assign a person to each tickets, so they can be resolved by competent stuff. Tickets have comments/attachment functionalities and history track record. The application supports multiply companies if needed.</p>",
+                        "<p>The Bug Tracker is an issue tracking app, where users can create issue tickets.</p> <p>Project Managers assign a person to each tickets, so they can be resolved by competent stuff. Tickets have comments/attachment functionality and history track record. The application supports multiply companies if needed.</p>",
                     Date = new DateOnly(2022, 02, 15),
                     GithubUrl = "https://gitHubUrl",
                     ProjectUrl = "https://www.slugocki.dev",
