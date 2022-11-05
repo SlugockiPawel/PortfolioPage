@@ -78,39 +78,41 @@ public static class ProjectsData
                     },
                 },
                 
-                // new ProjectModel()
-                // {
-                //     Id = 2,
-                //     Title = "Personal Blog",
-                //     Abstract =
-                //         "<p>The Blog app is a classic blog application built using .NET MVC.</p>"
-                //         + "<p>Main purpose of this application is to show .NET MVC capabilities and allow me to write tech-related articles.</p>",
-                //     Description =
-                //         "<p>The Blog is a .NET MVC application that allows me to write technology related posts. The idea was to write down my knowledge to have notes at hand. Additionally, if anyone will be able to profit from my notes, it would be great.</p>"
-                //         + "<p>The app itself uses Postgresql database alongside Entity Framework. It implements Authentication/Authorization mechanism with custom user roles. Also, each post has comments section.</p>"
-                //         + "<p>Administrator is responsible for managing user roles. Moderator is responsible for comments moderation.</p>",
-                //     Date = new DateOnly(2021, 11, 30),
-                //     GithubUrl = "https://github.com/SlugockiPawel/TheBlog",
-                //     ProjectUrl = "https://www.slugocki.dev",
-                //     CardImage = "images/projects/project-4.jpg",
-                //     CarouselImages = new List<string>()
-                //     {
-                //         "images/projects/project-4.jpg",
-                //         "images/projects/project-4.jpg"
-                //     },
-                //     Technologies = new List<Technology>()
-                //     {
-                //         Technology.Html5,
-                //         Technology.CSS3,
-                //         Technology.Bootstrap5,
-                //         Technology.JavaScript,
-                //         Technology.CSharp,
-                //         Technology.EntityFramework,
-                //         Technology.PostgreSQL,
-                //         Technology.MVC,
-                //         Technology.Git
-                //     },
-                // },
+                new ProjectModel()
+                {
+                    Id = 3,
+                    Title = "Personal Blog",
+                    Abstract =
+                        "<p>The Blog app is a classic blog application built using .NET MVC.</p>"
+                        + "<p>Main purpose of this application is to show .NET MVC capabilities and allow me to write tech-related articles.</p>",
+                    Description =
+                        "<p>The Blog is a .NET MVC application that allows me to write technology related posts. The idea was to write down my knowledge to have notes at hand. Additionally, if anyone will be able to profit from my notes, it would be great.</p>"
+                        + "<p>The app itself uses Postgresql database alongside Entity Framework. It implements Authentication/Authorization mechanism with custom user roles. Also, each post has comments section.</p>"
+                        + "<p>Administrator is responsible for managing user roles. Moderator is responsible for comments moderation.</p>",
+                    Date = new DateOnly(2021, 11, 30),
+                    GithubUrl = "https://github.com/SlugockiPawel/TheBlog",
+                    ProjectUrl = "https://www.slugocki.dev",
+                    CardImage = "/images/projects/blog_screenshots/MainPage.png",
+                    CarouselImages = new List<string>()
+                    {
+                        "/images/projects/blog_screenshots/MainPage.png",
+                        "/images/projects/blog_screenshots/Post.png",
+                        "/images/projects/blog_screenshots/Contact.png",
+                        "/images/projects/blog_screenshots/AboutMe.png",
+                    },
+                    Technologies = new List<Technology>()
+                    {
+                        Technology.Html5,
+                        Technology.CSS3,
+                        Technology.Bootstrap5,
+                        Technology.JavaScript,
+                        Technology.CSharp,
+                        Technology.EntityFramework,
+                        Technology.PostgreSQL,
+                        Technology.MVC,
+                        Technology.Git
+                    },
+                },
                 new ProjectModel()
                 {
                     Id = 3,
