@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddScoped<IPortfolioEmailSender, EmailService>();
+builder.Services.AddScoped<IImageService, ImageService>();
 
 builder.Services.AddSingleton<IBlogClient, BlogClient>();
 builder.Services.AddHttpClient<IBlogClient, BlogClient>(client =>
