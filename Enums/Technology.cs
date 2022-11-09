@@ -1,4 +1,4 @@
-﻿namespace Portfolio.Enums
+﻿namespace PortfolioPage.Enums
 {
     public enum Technology
     {

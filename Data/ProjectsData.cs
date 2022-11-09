@@ -1,4 +1,4 @@
-﻿using Portfolio.Enums;
+﻿using PortfolioPage.Enums;
 using PortfolioPage.ViewModels;
 
 namespace Portfolio.Data;

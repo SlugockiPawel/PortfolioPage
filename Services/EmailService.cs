@@ -2,6 +2,7 @@
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using MimeKit;
+using PortfolioPage.Models;
 using PortfolioPage.ViewModels;
 
 namespace Portfolio.Services
