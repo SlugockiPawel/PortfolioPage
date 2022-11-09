@@ -14,7 +14,7 @@ builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddSingleton<IBlogClient, BlogClient>();
 builder.Services.AddHttpClient<IBlogClient, BlogClient>(client =>
 {
-    client.BaseAddress = new Uri("https://localhost:44380/api/posts/");
+    client.BaseAddress = new Uri("https://localhost:44380/");
 });
 
 var app = builder.Build();

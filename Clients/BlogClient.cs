@@ -16,7 +16,7 @@ public class BlogClient : IBlogClient
     {
         try
         {
-            return await _httpClient.GetFromJsonAsync<IEnumerable<PostDto>>($"{count}");
+            return await _httpClient.GetFromJsonAsync<IEnumerable<PostDto>>($"api/posts/{count}");
         }
         catch (Exception e)
         {
