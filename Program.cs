@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Configuration;
-using Portfolio.Models;
 using Portfolio.Services;
+using PortfolioPage.Clients;
+using PortfolioPage.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,11 @@ builder.Services.AddRazorPages();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddScoped<IPortfolioEmailSender, EmailService>();
 
+builder.Services.AddSingleton<IBlogClient, BlogClient>();
+builder.Services.AddHttpClient<IBlogClient, BlogClient>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:44380/api/posts/");
+});
 
 var app = builder.Build();
 
@@ -31,6 +37,3 @@ app.MapRazorPages();
 
 app.Run();
 
-/*
-    *TODO connect Blog posts to Portfolio
- */

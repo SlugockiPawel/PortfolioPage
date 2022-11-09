@@ -1,5 +1,5 @@
 ﻿using Portfolio.Enums;
-using Portfolio.ViewModels;
+using PortfolioPage.ViewModels;
 
 namespace Portfolio.Data;
 

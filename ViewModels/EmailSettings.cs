@@ -1,4 +1,4 @@
-﻿namespace Portfolio.Models
+﻿namespace PortfolioPage.ViewModels
 {
     public sealed class EmailSettings
     {

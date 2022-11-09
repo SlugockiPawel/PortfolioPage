@@ -1,6 +1,6 @@
 ﻿using Portfolio.Enums;
 
-namespace Portfolio.ViewModels
+namespace PortfolioPage.ViewModels
 {
     public sealed class ProjectModel
     {
