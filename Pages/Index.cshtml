@@ -1,5 +1,6 @@
 ﻿@page
-@using Portfolio.Enums
+@using PortfolioPage.Enums
+@using PortfolioPage.Models
 @model PortfolioPage.Pages.IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -107,7 +108,7 @@
                 </div>
             </div>
 
-            <partial model="@Model.PostsFromBlog" name="Partials/BlogPosts"/>
+            <partial model="@Model.PostsFromBlog" view-data="ViewData" name="Partials/BlogPosts"></partial>
         </div>
     }
     else

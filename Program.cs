@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using Portfolio.Services;
 using PortfolioPage.Clients;
+using PortfolioPage.Models;
 using PortfolioPage.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,14 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.Configure<BlogApiSettings>(builder.Configuration.GetSection("BlogApiSettings"));
 builder.Services.AddScoped<IPortfolioEmailSender, EmailService>();
 builder.Services.AddScoped<IImageService, ImageService>();
 
 builder.Services.AddSingleton<IBlogClient, BlogClient>();
-builder.Services.AddHttpClient<IBlogClient, BlogClient>(client =>
-{
-    client.BaseAddress = new Uri("https://localhost:44380/");
-});
+builder.Services.AddHttpClient<IBlogClient, BlogClient>();
 
 var app = builder.Build();
 

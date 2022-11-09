@@ -1,6 +1,9 @@
 ﻿@model List<PortfolioPage.DTOs.PostDto>
 @inject IImageService ImageService
 
+@{
+    var baseAddress = ViewData["BlogClientBaseAddress"]?.ToString();
+}
 
 <div class="row">
 
@@ -17,7 +20,7 @@
                         </div>
                     </div>
                     <div class="card-link">
-                        <a class="text-secondary fw-bolder" href=@($"https://localhost:44380/BlogPosts/UrlFriendly/{post.Slug}") target="_blank">View Details</a>
+                        <a class="text-secondary fw-bolder" href=@($"{baseAddress}BlogPosts/UrlFriendly/{post.Slug}") target="_blank">View Details</a>
                     </div>
                 </div>
                 <div class="card-footer d-flex">
