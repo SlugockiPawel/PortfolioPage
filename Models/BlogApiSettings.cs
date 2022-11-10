@@ -2,5 +2,5 @@
 
 public class BlogApiSettings
 {
-    public  Uri? BaseAddress { get; set; }
+    public Uri? BlogApiBaseAddress { get; set; }
 }

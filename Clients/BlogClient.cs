@@ -12,7 +12,7 @@ public class BlogClient : IBlogClient
     public BlogClient(HttpClient httpClient, IOptions<BlogApiSettings> blogApiSettings)
     {
         _httpClient = httpClient;
-        _httpClient.BaseAddress = blogApiSettings.Value.BaseAddress;
+        _httpClient.BaseAddress = blogApiSettings.Value.BlogApiBaseAddress;
     }
 
     public async Task<IEnumerable<PostDto>?> GetPostsFromBlog(int count)

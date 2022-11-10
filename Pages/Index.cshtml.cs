@@ -25,7 +25,7 @@ namespace PortfolioPage.Pages
         public async Task OnGetAsync()
         {
             PostsFromBlog = (await _blogClient.GetPostsFromBlog(3))?.ToList();
-            ViewData["BlogClientBaseAddress"] = _blogApiSettings.BaseAddress;
+            ViewData["BlogClientBaseAddress"] = _blogApiSettings.BlogApiBaseAddress;
         }
         
         
