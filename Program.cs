@@ -2,6 +2,7 @@ using Microsoft.Extensions.Configuration;
 using Portfolio.Services;
 using PortfolioPage.Clients;
 using PortfolioPage.Models;
+using PortfolioPage.Services;
 using PortfolioPage.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);

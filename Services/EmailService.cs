@@ -1,11 +1,11 @@
-﻿using Microsoft.Extensions.Options;
-using MailKit.Net.Smtp;
+﻿using MailKit.Net.Smtp;
 using MailKit.Security;
+using Microsoft.Extensions.Options;
 using MimeKit;
+using Portfolio.Services;
 using PortfolioPage.Models;
-using PortfolioPage.ViewModels;
 
-namespace Portfolio.Services
+namespace PortfolioPage.Services
 {
     public sealed class EmailService : IPortfolioEmailSender
     {
@@ -34,8 +34,8 @@ namespace Portfolio.Services
             email.Body = builder.ToMessageBody();
 
             using var smtp = new SmtpClient();
-            await smtp.ConnectAsync(_emailSettings.Host, _emailSettings.Port, SecureSocketOptions.StartTls);
-            await smtp.AuthenticateAsync(_emailSettings.Email, _emailSettings.Password);
+            await smtp.ConnectAsync(_emailSettings.EmailHost, _emailSettings.EmailPort, SecureSocketOptions.StartTls);
+            await smtp.AuthenticateAsync(_emailSettings.Email, _emailSettings.EmailPassword);
 
             await smtp.SendAsync(email);
 
