@@ -44,7 +44,7 @@ public static class ProjectsData
                         Technology.Git
                     }
                 },
-                new ProjectModel()
+                new()
                 {
                     Id = 2,
                     Title = "The Dating App",
@@ -78,7 +78,7 @@ public static class ProjectsData
                     },
                 },
                 
-                new ProjectModel()
+                new()
                 {
                     Id = 3,
                     Title = "Personal Blog",
@@ -113,9 +113,9 @@ public static class ProjectsData
                         Technology.Git
                     },
                 },
-                new ProjectModel()
+                new()
                 {
-                    Id = 3,
+                    Id = 4,
                     Title = "The Movie Store",
                     Abstract =
                         "<p>The Movie Store application is a movie library app that allows user to explore The Movie Database.</p>"
@@ -146,9 +146,9 @@ public static class ProjectsData
                     },
                 },
                 // Mini projects
-                new ProjectModel()
+                new ()
                 {
-                    Id = 4,
+                    Id = 5,
                     IsMainProject = false,
                     Title = "The Loan Unicorn JS",
                     Abstract =
@@ -177,7 +177,7 @@ public static class ProjectsData
                         Technology.Git
                     },
                 },
-                new ProjectModel()
+                new ()
                 {
                     Id = 6,
                     IsMainProject = false,
@@ -209,9 +209,9 @@ public static class ProjectsData
                         Technology.Git
                     },
                 },
-                new ProjectModel()
+                new()
                 {
-                    Id = 8,
+                    Id = 7,
                     IsMainProject = false,
                     Title = "Rewind JS",
                     Abstract =
@@ -240,9 +240,9 @@ public static class ProjectsData
                         Technology.Git
                     },
                 },
-                new ProjectModel()
+                new()
                 {
-                    Id = 9,
+                    Id = 8,
                     IsMainProject = false,
                     Title = "Speedometer JS",
                     Abstract =
@@ -271,9 +271,9 @@ public static class ProjectsData
                         Technology.Git
                     },
                 },
-                new ProjectModel()
+                new()
                 {
-                    Id = 10,
+                    Id = 9,
                     IsMainProject = false,
                     Title = "Tacocat JS",
                     Abstract =
