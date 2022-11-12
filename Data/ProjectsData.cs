@@ -12,7 +12,7 @@ public static class ProjectsData
         ProjectsList.AddRange(
             new List<ProjectModel>
             {
-                new ProjectModel()
+                new()
                 {
                     Id = 1,
                     Title = "The Bug Tracker",
@@ -21,17 +21,17 @@ public static class ProjectsData
                     Description =
                         "<p>The Bug Tracker is an issue tracking app, where users can create issue tickets.</p> <p>Project Managers assign a person to each tickets, so they can be resolved by competent stuff. Tickets have comments/attachment functionality and history track record. The application supports multiply companies if needed.</p>",
                     Date = new DateOnly(2022, 02, 15),
-                    GithubUrl = "https://gitHubUrl",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    GithubUrl = "https://github.com/SlugockiPawel/TheBugTracker",
+                    ProjectUrl = "https://bugtracker.slugocki.com.pl",
                     CardImage = "/images/projects/bug_tracker_screenshots/Dashboard1.png",
-                    CarouselImages = new List<string>()
+                    CarouselImages = new List<string>
                     {
                         "/images/projects/bug_tracker_screenshots/Dashboard1.png",
                         "/images/projects/bug_tracker_screenshots/Dashboard2.png",
                         "/images/projects/bug_tracker_screenshots/LoginPage.png",
                         "/images/projects/bug_tracker_screenshots/TicketDetails.png",
                     },
-                    Technologies = new List<Technology>()
+                    Technologies = new List<Technology>
                     {
                         Technology.Html5,
                         Technology.CSS3,
@@ -52,10 +52,10 @@ public static class ProjectsData
                     Description = "<p>The Dating App is a social application. It allows users to upload their description abd photos. Also, it provides communication capabilities- either via Inbox/Outbox messages or real time chat (using SignalR)</p>" +
                        "<p>Users can be searched via filter conditions. Also, the app provide like/dislike functionality. Photos are stored in third party vendor cloud (Cloudinary).</p>",
                     Date = new DateOnly(2022, 10, 01),
-                    GithubUrl = "https://github.com/SlugockiPawel/MovieStore",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    GithubUrl = "https://github.com/SlugockiPawel/DatingApp",
+                    ProjectUrl = "https://datingapp.slugocki.com.pl",
                     CardImage = "/images/projects/dating_app_screenshots/Like.png",
-                    CarouselImages = new List<string>()
+                    CarouselImages = new List<string>
                     {
                         "/images/projects/dating_app_screenshots/Like.png",
                         "/images/projects/dating_app_screenshots/Login.png",
@@ -63,7 +63,7 @@ public static class ProjectsData
                         "/images/projects/dating_app_screenshots/Matches.png",
                         "/images/projects/dating_app_screenshots/UserDetails.png",
                     },
-                    Technologies = new List<Technology>()
+                    Technologies = new List<Technology>
                     {
                         Technology.Html5,
                         Technology.CSS3,
@@ -75,7 +75,7 @@ public static class ProjectsData
                         Technology.WebAPI,
                         Technology.Angular,
                         Technology.Git
-                    },
+                    }
                 },
                 
                 new()
@@ -91,16 +91,16 @@ public static class ProjectsData
                         + "<p>Administrator is responsible for managing user roles. Moderator is responsible for comments moderation.</p>",
                     Date = new DateOnly(2021, 11, 30),
                     GithubUrl = "https://github.com/SlugockiPawel/TheBlog",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    ProjectUrl = "https://blog.slugocki.com.pl/",
                     CardImage = "/images/projects/blog_screenshots/MainPage.png",
-                    CarouselImages = new List<string>()
+                    CarouselImages = new List<string>
                     {
                         "/images/projects/blog_screenshots/MainPage.png",
                         "/images/projects/blog_screenshots/Post.png",
                         "/images/projects/blog_screenshots/Contact.png",
                         "/images/projects/blog_screenshots/AboutMe.png",
                     },
-                    Technologies = new List<Technology>()
+                    Technologies = new List<Technology>
                     {
                         Technology.Html5,
                         Technology.CSS3,
@@ -111,7 +111,7 @@ public static class ProjectsData
                         Technology.PostgreSQL,
                         Technology.MVC,
                         Technology.Git
-                    },
+                    }
                 },
                 new()
                 {
@@ -125,9 +125,9 @@ public static class ProjectsData
                         + "<p>The Movie Store is a .NET MVC application tah uses Postgresql database alongside Entity Framework.</p>",
                     Date = new DateOnly(2021, 12, 28),
                     GithubUrl = "https://github.com/SlugockiPawel/MovieStore",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    ProjectUrl = "https://moviestore.slugocki.com.pl",
                     CardImage = "/images/projects/movie_store_screenshots/Main.png",
-                    CarouselImages = new List<string>()
+                    CarouselImages = new List<string>
                     {
                         "/images/projects/movie_store_screenshots/Main.png",
                         "/images/projects/movie_store_screenshots/Main2.png",
@@ -143,7 +143,7 @@ public static class ProjectsData
                         Technology.PostgreSQL,
                         Technology.MVC,
                         Technology.Git
-                    },
+                    }
                 },
                 // Mini projects
                 new ()
@@ -159,7 +159,7 @@ public static class ProjectsData
                         + "<p>The app takes user input needed for loan and calculates payment schedule.</p>",
                     Date = new DateOnly(2021, 08, 12),
                     GithubUrl = "https://github.com/SlugockiPawel/LoanUnicorn",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    ProjectUrl = "https://loan-unicorn.slugocki.com.pl",
                     CardImage = "/images/projects/loan_unicorn_screenshots/MainPage.png",
                     CarouselImages = new List<string>()
                     {
@@ -168,14 +168,14 @@ public static class ProjectsData
                         "/images/projects/loan_unicorn_screenshots/Result.png",
                         "/images/projects/loan_unicorn_screenshots/Code.png",
                     },
-                    Technologies = new List<Technology>()
+                    Technologies = new List<Technology>
                     {
                         Technology.Html5,
                         Technology.CSS3,
                         Technology.Bootstrap5,
                         Technology.JavaScript,
                         Technology.Git
-                    },
+                    }
                 },
                 new ()
                 {
@@ -191,23 +191,23 @@ public static class ProjectsData
                         + "<p>If the number is divisible by 3 and 5 - displayed value is <span class='fst-italic'> FizzBuzz </span>. If the number is divisible by 3 - displayed value is <span class='fst-italic'> Fizz </span>. If divisible by 5 - <span class='fst-italic'>Buzz.</span></p>",
                     Date = new DateOnly(2021, 08, 24),
                     GithubUrl = "https://github.com/SlugockiPawel/FizzBuzz",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    ProjectUrl = "https://fizzbuzz.slugocki.com.pl",
                     CardImage = "/images/projects/fizzbuzz_screenshots/MainPage.png",
-                    CarouselImages = new List<string>()
+                    CarouselImages = new List<string>
                     {
                         "/images/projects/fizzbuzz_screenshots/MainPage.png",
                         "/images/projects/fizzbuzz_screenshots/NoResult.png",
                         "/images/projects/fizzbuzz_screenshots/Result.png",
                         "/images/projects/fizzbuzz_screenshots/Code.png",
                     },
-                    Technologies = new List<Technology>()
+                    Technologies = new List<Technology>
                     {
                         Technology.Html5,
                         Technology.CSS3,
                         Technology.Bootstrap5,
                         Technology.JavaScript,
                         Technology.Git
-                    },
+                    }
                 },
                 new()
                 {
@@ -222,23 +222,23 @@ public static class ProjectsData
                         + "<p>String is taken from user via web form and its reversed version is returned back to user.</p>",
                     Date = new DateOnly(2021, 08, 02),
                     GithubUrl = "https://github.com/SlugockiPawel/Rewind",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    ProjectUrl = "https://rewind.slugocki.com.pl",
                     CardImage = "/images/projects/rewind_screenshots/MainPage.png",
-                    CarouselImages = new List<string>()
+                    CarouselImages = new List<string>
                     {
                         "/images/projects/rewind_screenshots/MainPage.png",
                         "/images/projects/rewind_screenshots/NoResult.png",
                         "/images/projects/rewind_screenshots/Result.png",
                         "/images/projects/rewind_screenshots/Code.png",
                     },
-                    Technologies = new List<Technology>()
+                    Technologies = new List<Technology>
                     {
                         Technology.Html5,
                         Technology.CSS3,
                         Technology.Bootstrap5,
                         Technology.JavaScript,
                         Technology.Git
-                    },
+                    }
                 },
                 new()
                 {
@@ -253,23 +253,23 @@ public static class ProjectsData
                         + "<p>Even number in displayed range are made bold.</p>",
                     Date = new DateOnly(2021, 07, 28),
                     GithubUrl = "https://github.com/SlugockiPawel/Speedometer",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    ProjectUrl = "https://speedometer.slugocki.com.pl",
                     CardImage = "/images/projects/speedometer_screenshots/MainPage.png",
-                    CarouselImages = new List<string>()
+                    CarouselImages = new List<string>
                     {
                         "/images/projects/speedometer_screenshots/MainPage.png",
                         "/images/projects/speedometer_screenshots/NoResult.png",
                         "/images/projects/speedometer_screenshots/Result.png",
                         "/images/projects/speedometer_screenshots/Code.png",
                     },
-                    Technologies = new List<Technology>()
+                    Technologies = new List<Technology>
                     {
                         Technology.Html5,
                         Technology.CSS3,
                         Technology.Bootstrap5,
                         Technology.JavaScript,
                         Technology.Git
-                    },
+                    }
                 },
                 new()
                 {
@@ -285,7 +285,7 @@ public static class ProjectsData
                         + "<p>String is taken from the user via web form and the result is returned back to the user in the same view</p>",
                     Date = new DateOnly(2021, 08, 11),
                     GithubUrl = "https://github.com/SlugockiPawel/tacocat",
-                    ProjectUrl = "https://www.slugocki.dev",
+                    ProjectUrl = "https://tacocat.slugocki.com.pl",
                     CardImage = "/images/projects/tacocat_screenshots/MainPage.png",
                     CarouselImages = new List<string>()
                     {
@@ -294,15 +294,15 @@ public static class ProjectsData
                         "/images/projects/tacocat_screenshots/NotPalindrome.png",
                         "/images/projects/tacocat_screenshots/Code.png",
                     },
-                    Technologies = new List<Technology>()
+                    Technologies = new List<Technology>
                     {
                         Technology.Html5,
                         Technology.CSS3,
                         Technology.Bootstrap5,
                         Technology.JavaScript,
                         Technology.Git
-                    },
-                },
+                    }
+                }
             }
         );
     }
